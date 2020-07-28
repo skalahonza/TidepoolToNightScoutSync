@@ -23,20 +23,20 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
             _options = options;
         }
 
-        public async Task<IReadOnlyList<Bolus>> GetBoluses(DateTime? start = null, DateTime? end = null) =>
+        public async Task<IReadOnlyList<Bolus>> GetBolusAsync(DateTime? start = null, DateTime? end = null) =>
             await _client
-                .GetAsync($"/data/{_options.UserId}")
-                .WithArgument("startDate", start)
-                .WithArgument("endDate", end)
+                .GetAsync($"data/{_options.UserId}")
+                .WithArgument("startDate", start?.ToString("o"))
+                .WithArgument("endDate", end?.ToString("o"))
                 .WithArgument("type", nameof(DataType.Bolus).ToLower())
                 .AsArray<Bolus>();
 
-        public async Task<IReadOnlyList<Bolus>> GetFood(DateTime? start = null, DateTime? end = null) =>
+        public async Task<IReadOnlyList<Food>> GetFoodAsync(DateTime? start = null, DateTime? end = null) =>
             await _client
-                .GetAsync($"/data/{_options.UserId}")
-                .WithArgument("startDate", start)
-                .WithArgument("endDate", end)
+                .GetAsync($"data/{_options.UserId}")
+                .WithArgument("startDate", start?.ToString("o"))
+                .WithArgument("endDate", end?.ToString("o"))
                 .WithArgument("type", nameof(DataType.Food).ToLower())
-                .AsArray<Bolus>();
+                .AsArray<Food>();
     }
 }

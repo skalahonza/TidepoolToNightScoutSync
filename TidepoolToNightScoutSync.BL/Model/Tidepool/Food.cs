@@ -7,15 +7,15 @@ namespace TidepoolToNightScoutSync.BL.Model.Tidepool
     public class Food
     {
         [JsonProperty("id")]
-        public string Id { get; set; }
+        public string? Id { get; set; }
 
         [JsonProperty("nutrition")]
-        public Nutrition Nutrition { get; set; }
+        public Nutrition? Nutrition { get; set; }
 
         [JsonProperty("time")]
-        public DateTime Time { get; set; }
+        public DateTime? Time { get; set; }
 
         [JsonProperty("uploadId")]
-        public string UploadId { get; set; }
+        public string? UploadId { get; set; }
     }
 }

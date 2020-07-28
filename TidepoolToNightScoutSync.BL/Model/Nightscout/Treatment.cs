@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
 
+using System;
+
 namespace TidepoolToNightScoutSync.BL.Model.Nightscout
 {
     public class Treatment
@@ -11,7 +13,7 @@ namespace TidepoolToNightScoutSync.BL.Model.Nightscout
         public string? EventType { get; set; }
 
         [JsonProperty("created_at")]
-        public string? CreatedAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
 
         [JsonProperty("glucose")]
         public string? Glucose { get; set; }
@@ -20,19 +22,19 @@ namespace TidepoolToNightScoutSync.BL.Model.Nightscout
         public string? GlucoseType { get; set; }
 
         [JsonProperty("carbs")]
-        public int? Carbs { get; set; }
+        public double? Carbs { get; set; }
 
         [JsonProperty("protein")]
-        public int? Protein { get; set; }
+        public double? Protein { get; set; }
 
         [JsonProperty("fat")]
-        public int? Fat { get; set; }
+        public double? Fat { get; set; }
 
         [JsonProperty("insulin")]
-        public int? Insulin { get; set; }
+        public double? Insulin { get; set; }
 
         [JsonProperty("units")]
-        public string? Units { get; set; }
+        public string Units { get; set; } = "mmol";
 
         [JsonProperty("notes")]
         public string? Notes { get; set; }
