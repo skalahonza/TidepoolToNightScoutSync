@@ -32,5 +32,5 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
 "sync:since": "2020-07-01",
 "sync:till": null
 ```
-1. Open command prompt in the folder and run the app using `dotnet run`
-2. You should now see your data in NightScout
+5. Open command prompt in the folder and run the app using `dotnet run`
+6. You should now see your data in NightScout
