@@ -10,7 +10,7 @@ Nightscout (CGM in the Cloud) is an open source, DIY project that allows real ti
 Nightscout was developed by parents of children with Type 1 Diabetes and has continued to be developed, maintained, and supported by volunteers. 
 [More](http://www.nightscout.info/)
 
-## Build and run
+## Build and run on your device
 1. Install .NET Core SDK for your platform ([Linux](https://docs.microsoft.com/en-us/dotnet/core/install/linux), [Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore31), [macOS](https://docs.microsoft.com/en-us/dotnet/core/install/macos))
 2. Navigate to `TidepoolToNightScoutSync.APP` folder
 3. Open file `appsettings.json`
