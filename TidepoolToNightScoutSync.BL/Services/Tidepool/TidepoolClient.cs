@@ -22,7 +22,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 
         public async Task<IReadOnlyList<Bolus>> GetBolusAsync(DateTime? start = null, DateTime? end = null) =>
             await _client
-                .GetAsync($"data/{_options.UserId}")
+                .GetAsync($"/data/{_options.UserId}")
                 .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
                 .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
                 .WithArgument("type", nameof(DataType.Bolus).ToLower())
@@ -30,7 +30,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 
         public async Task<IReadOnlyList<Food>> GetFoodAsync(DateTime? start = null, DateTime? end = null) =>
             await _client
-                .GetAsync($"data/{_options.UserId}")
+                .GetAsync($"/data/{_options.UserId}")
                 .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
                 .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
                 .WithArgument("type", nameof(DataType.Food).ToLower())
