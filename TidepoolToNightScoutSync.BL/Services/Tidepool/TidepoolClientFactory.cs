@@ -25,7 +25,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
         private async Task<TidepoolClient> AuthorizeAsync()
         {
             var response = await _client
-                .PostAsync("/auth/login")
+                .PostAsync("auth/login")
                 .WithBasicAuthentication(_options.Username, _options.Password)
                 .AsResponse();
 
