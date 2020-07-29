@@ -27,7 +27,7 @@ namespace TidepoolToNightScoutSync.BL.Services
 
         public async Task<IReadOnlyList<Treatment>> SyncAsync(DateTime? since = null, DateTime? till = null)
         {
-            since ??= _options.Since;
+            since ??= _options.Since ?? DateTime.Today;
             till ??= _options.Till;
             tidepool ??= await _factory.CreateAsync();
             var boluses = (await tidepool.GetBolusAsync(since, till))
