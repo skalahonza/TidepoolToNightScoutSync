@@ -23,7 +23,7 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
    * nightscout:ApiKey = your NightScout API SECRET (with at least [careportal](http://www.nightscout.info/wiki/welcome/website-features/0-9-features/authentication-roles) role)
    * sync:since = since when the data should be imported (optional, can be null)
    * sync:till = till when the data should be imported (optional, can be null)
-   * Example configuration
+ ### Example configuration
  ```js
 "tidepool:Username": "tidepool@username.com",
 "tidepool:Password": "password",
@@ -32,5 +32,5 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
 "sync:since": "2020-07-01",
 "sync:till": null
 ```
-5. Open command prompt in the folder and run the app using `dotnet run`
-6. You should now see your data in NightScout
+1. Open command prompt in the folder and run the app using `dotnet run`
+2. You should now see your data in NightScout
