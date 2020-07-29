@@ -3,7 +3,6 @@
 using Pathoschild.Http.Client;
 
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -14,7 +13,6 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 {
     public class TidepoolClientFactory
     {
-        private TidepoolClient? _instance;
         private readonly IClient _client;
         private readonly TidepoolClientOptions _options;
 
@@ -40,7 +38,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
             return new TidepoolClient(_client, _options);
         }
 
-        public async Task<TidepoolClient> CreateAsync() =>
-            _instance ??= await AuthorizeAsync();
+        public Task<TidepoolClient> CreateAsync() =>
+              AuthorizeAsync();
     }
 }

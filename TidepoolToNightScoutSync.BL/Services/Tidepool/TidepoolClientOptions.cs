@@ -1,12 +1,4 @@
-﻿using Pathoschild.Http.Client;
-
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
-using TidepoolToNightScoutSync.BL.Model.Tidepool;
-
-namespace TidepoolToNightScoutSync.BL.Services.Tidepool
+﻿namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 {
     public class TidepoolClientOptions
     {

@@ -1,36 +1,37 @@
+﻿using Microsoft.Extensions.Options;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.Extensions.Logging;
-
 using TidepoolToNightScoutSync.BL.Model.Nightscout;
 using TidepoolToNightScoutSync.BL.Services.Nightscout;
 using TidepoolToNightScoutSync.BL.Services.Tidepool;
 
-namespace TidepoolToNightScoutSync
+namespace TidepoolToNightScoutSync.BL.Services
 {
-    public class Function1
+    public class TidepoolToNightScoutSyncer
     {
         private readonly TidepoolClientFactory _factory;
         private readonly NightscoutClient _nightscout;
+        private readonly TidepoolToNightScoutSyncerOptions _options;
+        private TidepoolClient? tidepool;
 
-        public Function1(TidepoolClientFactory factory, NightscoutClient nightscout)
+        public TidepoolToNightScoutSyncer(TidepoolClientFactory factory, NightscoutClient nightscout, IOptions<TidepoolToNightScoutSyncerOptions> options)
         {
             _factory = factory;
             _nightscout = nightscout;
+            _options = options.Value;
         }
 
-
-        private async Task Sync()
+        public async Task<IReadOnlyList<Treatment>> SyncAsync(DateTime? since = null, DateTime? till = null)
         {
-            var tidepool = await _factory.CreateAsync();
-            var boluses = (await tidepool.GetBolusAsync(DateTime.Today)).ToDictionary(x => x.Time, x => x);
-            var food = (await tidepool.GetFoodAsync(DateTime.Today)).ToDictionary(x => x.Time, x => x);
+            since ??= _options.Since;
+            till ??= _options.Till;
+            tidepool ??= await _factory.CreateAsync();
+            var boluses = (await tidepool.GetBolusAsync(since, till)).ToDictionary(x => x.Time, x => x);
+            var food = (await tidepool.GetFoodAsync(since, till)).ToDictionary(x => x.Time, x => x);
             var treatments = boluses
                 .Values
                 // standalone boluses and boluses with food
@@ -44,23 +45,11 @@ namespace TidepoolToNightScoutSync
                 // food without boluses
                 .Concat(food.Values.Where(x => !boluses.ContainsKey(x.Time)).Select(x => new Treatment
                 {
-                    Carbs = x?.Nutrition?.Carbohydrate?.Net,
+                    Carbs = x.Nutrition?.Carbohydrate?.Net,
                     CreatedAt = x.Time,
                     EnteredBy = "Tidepool"
                 }));
-            var response = await _nightscout.AddTreatmentsAsync(treatments);
-        }
-
-        [FunctionName("Function2")]
-        public async Task Run2([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req, ILogger log)
-        {
-            await Sync();
-        }
-
-        [FunctionName("Function1")]
-        public async Task Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ILogger log)
-        {
-
+            return await _nightscout.AddTreatmentsAsync(treatments);
         }
     }
 }

@@ -1,11 +1,8 @@
-﻿using Microsoft.Extensions.Options;
-
+﻿
 using Pathoschild.Http.Client;
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 using TidepoolToNightScoutSync.BL.Model.Tidepool;
@@ -26,16 +23,16 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
         public async Task<IReadOnlyList<Bolus>> GetBolusAsync(DateTime? start = null, DateTime? end = null) =>
             await _client
                 .GetAsync($"data/{_options.UserId}")
-                .WithArgument("startDate", start?.ToString("o"))
-                .WithArgument("endDate", end?.ToString("o"))
+                .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
+                .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
                 .WithArgument("type", nameof(DataType.Bolus).ToLower())
                 .AsArray<Bolus>();
 
         public async Task<IReadOnlyList<Food>> GetFoodAsync(DateTime? start = null, DateTime? end = null) =>
             await _client
                 .GetAsync($"data/{_options.UserId}")
-                .WithArgument("startDate", start?.ToString("o"))
-                .WithArgument("endDate", end?.ToString("o"))
+                .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
+                .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
                 .WithArgument("type", nameof(DataType.Food).ToLower())
                 .AsArray<Food>();
     }

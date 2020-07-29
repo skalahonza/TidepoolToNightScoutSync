@@ -5,7 +5,6 @@ using Pathoschild.Http.Client;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 using TidepoolToNightScoutSync.BL.Model.Nightscout;
