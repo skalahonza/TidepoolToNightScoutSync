@@ -30,8 +30,14 @@ namespace TidepoolToNightScoutSync.BL.Services
             since ??= _options.Since;
             till ??= _options.Till;
             tidepool ??= await _factory.CreateAsync();
-            var boluses = (await tidepool.GetBolusAsync(since, till)).ToDictionary(x => x.Time, x => x);
-            var food = (await tidepool.GetFoodAsync(since, till)).ToDictionary(x => x.Time, x => x);
+            var boluses = (await tidepool.GetBolusAsync(since, till))
+                .GroupBy(x => x.Time)
+                .Select(x => x.First())
+                .ToDictionary(x => x.Time, x => x);
+            var food = (await tidepool.GetFoodAsync(since, till))
+                .GroupBy(x => x.Time)
+                .Select(x => x.First())
+                .ToDictionary(x => x.Time, x => x);
             var treatments = boluses
                 .Values
                 // standalone boluses and boluses with food
