@@ -44,7 +44,7 @@ namespace TidepoolToNightScoutSync.API
             ExecuteSafeAsync(_syncer.SyncAsync());
 
         [FunctionName(nameof(Sync))]
-        public Task Sync([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req, ILogger log)
+        public Task Sync([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req, ILogger log)
         {
             req.Query.TryGetValue("since", out var sinceValue);
             req.Query.TryGetValue("till", out var tillValue);
