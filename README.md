@@ -1,5 +1,7 @@
 # Tidepool to NightScout sync tool
 This tool helps syncing data from **Tidepool** to **NightScout**. Currently only normal bolus and carbs are supported.
+![Sync](Images/sync.PNG)
+
 ## What is Tidepool
 Tidepool is a nonprofit organization dedicated to making diabetes data more accessible, actionable, and meaningful for people with diabetes, their care teams, and researchers.
 [More](https://www.tidepool.org/)
