@@ -41,5 +41,8 @@ namespace TidepoolToNightScoutSync.BL.Model.Nightscout
 
         [JsonProperty("enteredBy")]
         public string? EnteredBy { get; set; }
+
+        [JsonProperty("duration")]
+        public double? Duration { get; set; }
     }
 }

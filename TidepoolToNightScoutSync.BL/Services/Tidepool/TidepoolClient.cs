@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
+using TidepoolToNightScoutSync.BL.Extensions;
 using TidepoolToNightScoutSync.BL.Model.Tidepool;
 
 namespace TidepoolToNightScoutSync.BL.Services.Tidepool
@@ -25,7 +26,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
                 .GetAsync($"data/{_options.UserId}")
                 .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
                 .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
-                .WithArgument("type", nameof(DataType.Bolus).ToLower())
+                .WithArgument("type", nameof(DataType.Bolus).ToCamelCase())
                 .AsArray<Bolus>();
 
         public async Task<IReadOnlyList<Food>> GetFoodAsync(DateTime? start = null, DateTime? end = null) =>
@@ -33,7 +34,15 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
                 .GetAsync($"data/{_options.UserId}")
                 .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
                 .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
-                .WithArgument("type", nameof(DataType.Food).ToLower())
+                .WithArgument("type", nameof(DataType.Food).ToCamelCase())
                 .AsArray<Food>();
+
+        public async Task<IReadOnlyList<PhysicalActivity>> GetPhysicalActivityAsync(DateTime? start = null, DateTime? end = null) =>
+            await _client
+                .GetAsync($"data/{_options.UserId}")
+                .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
+                .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
+                .WithArgument("type", nameof(DataType.PhysicalActivity).ToCamelCase())
+                .AsArray<PhysicalActivity>();
     }
 }

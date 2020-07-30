@@ -3,6 +3,7 @@
     public enum DataType
     {
         Bolus,
-        Food
+        Food,
+        PhysicalActivity
     }
 }

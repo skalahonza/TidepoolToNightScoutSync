@@ -38,6 +38,7 @@ namespace TidepoolToNightScoutSync.BL.Services
                 .GroupBy(x => x.Time)
                 .Select(x => x.First())
                 .ToDictionary(x => x.Time, x => x);
+            var activity = await tidepool.GetPhysicalActivityAsync(since, till);
             var treatments = boluses
                 .Values
                 // standalone boluses and boluses with food
@@ -52,6 +53,15 @@ namespace TidepoolToNightScoutSync.BL.Services
                 .Concat(food.Values.Where(x => !boluses.ContainsKey(x.Time)).Select(x => new Treatment
                 {
                     Carbs = x.Nutrition?.Carbohydrate?.Net,
+                    CreatedAt = x.Time,
+                    EnteredBy = "Tidepool"
+                }))
+                // physical activity
+                .Concat(activity.Select(x => new Treatment
+                {
+                    Notes = x.Name,
+                    Duration = x.Duration?.Value / 60,
+                    EventType = "Exercise",
                     CreatedAt = x.Time,
                     EnteredBy = "Tidepool"
                 }));

@@ -1,5 +1,5 @@
 # Tidepool to NightScout sync tool
-This tool helps syncing data from **Tidepool** to **NightScout**. Currently only normal bolus and carbs are supported.
+This tool helps syncing data from **Tidepool** to **NightScout**. Currently only normal bolus, carbs and physical activity are supported.
 ![Sync](Images/sync.PNG)
 
 ## What is Tidepool
