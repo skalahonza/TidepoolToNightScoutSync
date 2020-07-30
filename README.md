@@ -49,6 +49,7 @@ Good for AdHoc syncing.
 1. Navigate to `TidepoolToNightScoutSync.APP` folder
 2. Run command `dotnet run -- tidepool:Username="tidepool@username.com" tidepool:Password="password" nightscout:BaseUrl="https://skalich.herokuapp.com" nightscout:ApiKey="123456789101112"`
    * This will sync all data from Today
+   * Notice that **sync:since** is missing
 
 ## Sync values from any date
 If you have filled your user credentials in `appsettings.json` you don't have to mention them when running the app using CMD.
