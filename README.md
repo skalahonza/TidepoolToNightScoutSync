@@ -25,12 +25,14 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
    * sync:till = till when the data should be imported (optional, can be null)
  ### Example configuration
  ```js
+ {
 "tidepool:Username": "tidepool@username.com",
 "tidepool:Password": "password",
 "nightscout:BaseUrl": "https://skalich.herokuapp.com",
 "nightscout:ApiKey": "123456789101112",
 "sync:since": "2020-07-01",
 "sync:till": null
+}
 ```
 5. Open command prompt in the folder and run the app using `dotnet run`
 6. You should now see your data in NightScout
