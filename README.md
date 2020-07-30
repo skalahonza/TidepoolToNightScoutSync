@@ -36,3 +36,23 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
 ```
 5. Open command prompt in the folder and run the app using `dotnet run`
 6. You should now see your data in NightScout
+
+## Run using only CMD
+Good for AdHoc syncing.
+1. Navigate to `TidepoolToNightScoutSync.APP` folder
+2. Run command `dotnet run -- tidepool:Username="tidepool@username.com" tidepool:Password="password" nightscout:BaseUrl="https://skalich.herokuapp.com" nightscout:ApiKey="123456789101112" sync:since="2020-07-31"`
+   * This will sync all date since 31st of July 2020
+   * It will also use Tidepool username, password and NightScout base url, API Secret from the command
+
+## Sync values from Today
+Good for AdHoc syncing.
+1. Navigate to `TidepoolToNightScoutSync.APP` folder
+2. Run command `dotnet run -- tidepool:Username="tidepool@username.com" tidepool:Password="password" nightscout:BaseUrl="https://skalich.herokuapp.com" nightscout:ApiKey="123456789101112"`
+   * This will sync all data from Today
+
+## Sync values from any date
+If you have filled your user credentials in `appsettings.json` you don't have to mention them when running the app using CMD.
+1. Navigate to `TidepoolToNightScoutSync.APP` folder
+2. Run command `dotnet run -- sync:since="2020-07-31"`
+   * This will sync all date since 31st of July 2020
+   * Rest of the configuration is loaded from `appsettings.json`
