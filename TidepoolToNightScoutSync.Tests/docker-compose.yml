@@ -1,0 +1,39 @@
+version: "3.4"
+
+volumes:
+  mongodb_data_container:
+
+services:
+  nightscout:
+    image: "skalahonza/nightscout"
+    build:
+      context: .
+      dockerfile: Dockerfile    
+    environment:
+      API_SECRET: "${API_SECRET:-123456789abc}"
+      MONGO_CONNECTION: 'mongodb://${MONGODB_USERNAME:-nightscout}:${MONGODB_PASSWORD:-secret}@database/nightscout?retryWrites=true&w=majority&authSource=admin'
+      MONGO_COLLECTION: 'entries'
+      INSECURE_USE_HTTP: "true"
+      SECURE_HSTS_HEADER: "false"
+      PORT: 1337
+      TIME_FORMAT: "24"
+      DISPLAY_UNITS: "mmol"
+      WAIT_HOSTS: "database:27017"
+    depends_on:
+      - database
+    ports:
+      - "5001:1337"
+
+  database:
+    image: mongo:3
+    environment:
+      MONGO_INITDB_DATABASE: nightscout
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USERNAME:-nightscout}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD:-secret}
+      AUTH: 'true'
+    expose:
+      - 27017
+      - 27018
+      - 27019
+    volumes:
+      - mongodb_data_container:/data/db
