@@ -28,5 +28,20 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
             await _client
                 .PostAsync("api/v1/treatments", treatments)
                 .AsArray<Treatment>();
+
+        /// <summary>
+        /// Get information about the Nightscout treatments.
+        /// </summary>
+        /// <param name="find">The query used to find entries, supports nested query syntax. Examples find[insulin][$gte]=3 find[carb][$gte]=100 find[eventType]=Correction+Bolus All find parameters are interpreted as strings.</param>
+        /// <param name="count">Number of entries to return.</param>
+        /// <returns></returns>
+        public async Task<IReadOnlyList<Treatment>> GetTreatmentsAsync(string? find, int? count) =>
+            await _client
+                .GetAsync("api/v1/treatments")
+                .WithArgument("find", find)
+                .WithArgument("count", count)
+                .AsArray<Treatment>();
+
+        
     }
 }
