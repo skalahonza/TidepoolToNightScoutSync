@@ -24,6 +24,7 @@ namespace TidepoolToNightScoutSync.APP
             //logging
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
+                .Enrich.With<Sanitizer>()
                 .CreateLogger();
 
             // dependency injection
