@@ -2,7 +2,6 @@
 using Serilog.Events;
 
 using System;
-using System.Linq;
 using System.Web;
 
 namespace TidepoolToNightScoutSync.APP
