@@ -41,7 +41,5 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
                 .WithArgument("find", find)
                 .WithArgument("count", count)
                 .AsArray<Treatment>();
-
-        
     }
 }

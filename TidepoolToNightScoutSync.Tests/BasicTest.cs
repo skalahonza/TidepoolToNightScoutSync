@@ -41,8 +41,8 @@ namespace TidepoolToNightScoutSync.Tests
         public BasicTest()
         {
             var configuration = new ConfigurationBuilder()
-                .AddUserSecrets<BasicTest>()
                 .AddEnvironmentVariables()
+                .AddUserSecrets<BasicTest>()
                 .Build();
 
             var services = new ServiceCollection()
