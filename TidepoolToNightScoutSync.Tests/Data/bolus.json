@@ -1,0 +1,1990 @@
+[
+  {
+    "id": "342e4583af185d4641841965fdbefa22",
+    "normal": 6.5,
+    "origin": {
+      "id": "36AEC2F9-AAB2-4208-862A-A759DA6A754C",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "E110B10B-CCB1-4D18-A81F-E6B76A5D97E4",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-08T17:37:40.089Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "81a9d521c868e4d77f7b06703afaede2",
+    "normal": 2,
+    "origin": {
+      "id": "4EECE00C-4741-47EA-86E0-6BD46EE12425",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "F4A151F5-0DD0-4B35-8E56-B14290461D02",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-08T13:19:24.990Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "f25335f1434bf3eb147e46e0386fee98",
+    "normal": 5,
+    "origin": {
+      "id": "8C352300-F095-482A-9E7F-BD1C32D236B9",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "8167E180-C35C-4E72-8228-D7E40DEB8BE3",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-08T10:00:16.352Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "87cbf8d93a00baf3a2cf393eff29a79f",
+    "normal": 3,
+    "origin": {
+      "id": "7419E651-CD7D-42B4-88BD-555F8EBC30DA",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "F7437316-ACDF-4719-A35C-A517DDC1EDAB",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-08T06:21:13.000Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b762e309a100a17998cb400b37fb3e1e",
+    "normal": 1.5,
+    "origin": {
+      "id": "2462EA7D-9DE3-47A5-AF2B-048BADFE4B76",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "978392DF-4657-4717-8FA0-54F6C6072CB8",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-08T05:00:22.339Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "f69c89e7aa516e043a4b73f98061acee",
+    "normal": 4.5,
+    "origin": {
+      "id": "933416A7-672C-4B34-914E-DE0A57D012FC",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "26B22313-8364-48B5-87E3-02A349ADC452",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T20:23:05.880Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "30c0bbda1646d61938325561caf05e20",
+    "normal": 4,
+    "origin": {
+      "id": "BFB25E4D-F2F9-4E4C-A493-0657FDA1F883",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "CBA3CD4B-2F50-4796-90A5-83D168BFF553",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T18:43:49.660Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "93094a2d538aa527d83921be5394a9b0",
+    "normal": 2.5,
+    "origin": {
+      "id": "B43F980F-9C2D-4184-B2C7-73E4288EE4B0",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "F9BFB648-BDDC-4009-AAB1-D836BF7F6071",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T15:45:10.626Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "6acec72ff16d1794a6ffd086c68560a3",
+    "normal": 2,
+    "origin": {
+      "id": "A06B2435-A993-4BEF-A07C-3E8036BC4920",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "1DC659E8-2F24-4B71-9F8D-3660E53A4393",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T15:27:47.422Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "48582a0fabd8fcda3054822a8c383b25",
+    "normal": 2.5,
+    "origin": {
+      "id": "5F024CC2-98C8-4BFB-8AC7-8C8972660742",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7185AA23-966F-4334-BA4C-094B3F282E1E",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T13:06:02.871Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "5b9bccac87a634feaed16152c7ad4c42",
+    "normal": 6,
+    "origin": {
+      "id": "B0DB6CE0-7221-4261-8C67-F0C43AED8851",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "66CC60E2-6B17-4009-B573-24FC9CEDF599",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T09:06:36.626Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "2c0b12fad626b4060f2be674a9d6440b",
+    "normal": 2,
+    "origin": {
+      "id": "675475F6-848C-457F-8C9C-52260771DB6D",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "DFE770B8-DADB-4B6E-BB28-7BC632E42111",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T05:04:28.245Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "9b91790fb77e096243b99b7a34c0ba80",
+    "normal": 6,
+    "origin": {
+      "id": "6B1C3CC7-D5A7-43BA-8B9D-F118F2DEBBC8",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "0D77FF2E-AC5A-4BA2-9951-D4F4837F2197",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-07T01:44:00.538Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "1ed06f26940d953b71865459dfabaeb0",
+    "normal": 6.5,
+    "origin": {
+      "id": "1E631FD0-F5E8-4834-A01A-84BE7AD16CA7",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "AD2C6449-5672-4765-96D8-4D43E907BD5C",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-06T18:00:50.270Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "a33b6a973f6e1bd65043b724f12c5048",
+    "normal": 3,
+    "origin": {
+      "id": "689C7F87-5745-4A49-83C0-E77A84E49658",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "98C540C3-E717-4748-B132-3DA9B1089D91",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-06T15:27:39.485Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "4d63babda5b790fe948b6a0566366068",
+    "normal": 2.5,
+    "origin": {
+      "id": "2C6BA221-1250-45BC-9C27-87292001A986",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "667E9A21-6656-4C6B-80FC-5A79831F7EA2",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-06T11:04:07.887Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "caadb42ead1807ff29241184407b48dc",
+    "normal": 5.5,
+    "origin": {
+      "id": "304555C1-ADB1-400E-B22F-5A4089B266F4",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "EB7035C3-BA9E-4D1E-837E-EF3DF25D2394",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-06T09:40:11.095Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "aedab3f70932e967ae3f9c252ede3a75",
+    "normal": 1,
+    "origin": {
+      "id": "2AD62D61-D600-4F82-B9E5-53C60CCD3737",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "92C2FB6F-4471-4356-8A71-89CDF038DB8C",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-06T07:20:19.501Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "c969be611229896f7562442355d1e69c",
+    "normal": 1.5,
+    "origin": {
+      "id": "0BD37C34-0696-48B6-97E8-4BD48D6D51DD",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "3C68DB4F-A81D-46C0-93E3-D764E39D2A56",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T22:35:05.771Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "1bb0379d424b23f64fb906ea69a6d071",
+    "normal": 1,
+    "origin": {
+      "id": "75421224-CC2E-430E-AC2B-2CA7ACDE7C62",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "399918B9-4BB4-4A12-9840-6D21FE1CF554",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T21:12:53.108Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "3129586ff874fa2fc434dab25040ef5e",
+    "normal": 1.5,
+    "origin": {
+      "id": "062FD294-3561-4392-97C1-CD16972B5259",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "BF2A25CA-6A2F-413C-AFE0-E4DC5A71D0E1",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T18:42:42.238Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "670193836bff8b6cd0c92abd8e361bec",
+    "normal": 1.5,
+    "origin": {
+      "id": "C4E1E6E6-2703-4D22-B87E-0602253BE754",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "BFABB749-4FF4-4050-A075-093403E545C7",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T17:11:36.524Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "2bd0be3bf38225f456e4fe69a7dc0e59",
+    "normal": 2.5,
+    "origin": {
+      "id": "2682EDFA-8387-4522-BEB2-DA7511D1B98A",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "0CE0DDB2-A38A-4CDE-98A6-82EAE14D054D",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T12:26:25.719Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "04a0459e1309e195ad376efef82a2137",
+    "normal": 1.5,
+    "origin": {
+      "id": "0C795420-1491-4FB4-AC5E-7DBAD89E5BA4",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "CA4B9C4B-7A33-4977-A99B-4521829D4CEB",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T11:27:58.791Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "0dc9528425a2e6067aa65698a42aa11e",
+    "normal": 5,
+    "origin": {
+      "id": "E2E62808-C944-4EDB-9099-D571922CE531",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "00DF4B4E-0D39-4C2A-AE7F-CB3620236962",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T09:14:57.828Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "e18bc18a965984d2d0d21a6f8da56c13",
+    "normal": 1,
+    "origin": {
+      "id": "F7E0595A-745B-4B7A-99CD-C162C0FF71E8",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "20D4220F-64A3-42C2-8F93-EAECB8A9CEAB",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T07:53:01.819Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "06495e766479e27fd91f093116073fc1",
+    "normal": 1,
+    "origin": {
+      "id": "17806698-6567-4986-81AF-AE6C0241F444",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "E255B57F-EB4F-4B98-A365-A75BEA593E3C",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-05T05:41:41.166Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "88f822c5a918e8cfd5a02687fb5114d0",
+    "normal": 5,
+    "origin": {
+      "id": "CDF18CFE-402F-4861-86CD-51BF2E11BE6C",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7C9F2C68-6BE4-48D0-BD95-2CA7FB5AF423",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T21:28:24.901Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "a907648ba7c4c47207e59056e0f23239",
+    "normal": 2,
+    "origin": {
+      "id": "E7FD9A29-53D3-4A4C-8D41-5636ACD063ED",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "852F49B9-FBD2-424B-AC65-0F7CF7951F08",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T20:00:53.220Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "af44e621f28eaa730c82d1cd91a3562d",
+    "normal": 1,
+    "origin": {
+      "id": "F53DE578-314B-4859-9B0E-CDAAD75BA561",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "852110DA-A428-4F9E-9660-80DA726C088D",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T19:27:52.729Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "23099372c139910c37944c9ab77e552a",
+    "normal": 2,
+    "origin": {
+      "id": "380BC7D4-FCFA-4B01-8D7A-0A786D8C7712",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A2B3F0F8-F792-4BED-A008-71CAB4C86B0B",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T18:10:51.695Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "683185a1d7ff2178bc9a71013ab330c5",
+    "normal": 2.5,
+    "origin": {
+      "id": "CB0AFFE2-6E6F-4A74-B4D0-EEB5722F8B21",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "39E5E188-B3E4-4A0A-A8D7-437DA68129A1",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T17:47:09.480Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "5ec0c7b376571007cae24a4e4b6ef0f5",
+    "normal": 1,
+    "origin": {
+      "id": "6184E60C-F488-40A2-B47A-77599299526F",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "30B395B4-F63D-4DDE-BC0C-ED69DF5F8F14",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T15:33:02.000Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "505ce5c35801cd51c1c9df8a199b9d23",
+    "normal": 1.5,
+    "origin": {
+      "id": "E714AA66-D71B-49E4-94B8-CAFF6142E85B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "39C7E1C4-C069-4112-964E-AC84A6DFE18B",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T15:21:34.383Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "1f2fe2439342e84598353cc2a3058aa3",
+    "normal": 3.5,
+    "origin": {
+      "id": "D56048CE-4686-475A-BC09-362E1CD07473",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "699730D7-E5F3-47DC-86AD-F58F7F20F26F",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T14:07:26.497Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "05ab9362e86d0a5c944b5f4a929da647",
+    "normal": 4,
+    "origin": {
+      "id": "989B824E-AB9D-40CC-A050-5BA4F672E858",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "B25A2949-EF67-4157-A86C-72E2331AE74A",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T11:15:07.007Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "e56001db3a559c7255e5e9072d900879",
+    "normal": 2.5,
+    "origin": {
+      "id": "1710CACA-546F-4057-AC1D-2D9E28C00FAA",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "20FB1538-6629-4F73-8F2A-1F19214FA541",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-04T09:57:20.000Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "3dae6464bab191228d3173cec8645563",
+    "normal": 1,
+    "origin": {
+      "id": "FA56A66E-A2A9-4485-837A-1FB1450FC31A",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "055D5CA5-31AE-4E37-9F07-DD7AAEAED840",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T19:31:37.873Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "585413876a34bef229150541554bfdbf",
+    "normal": 5,
+    "origin": {
+      "id": "C6DA8159-636B-447C-A137-E0DCD0993C03",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "D53B13AF-1441-456C-BF26-4D68019D9138",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T17:43:04.593Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "7e601999e83722d41c7a85261244e460",
+    "normal": 1.5,
+    "origin": {
+      "id": "BCA2E923-5675-4390-A462-2986D6F3ED7C",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "85B14BF5-8883-4F02-B95E-DB41FFE305EF",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T15:28:33.230Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "e1bb0fad722749fbd118d559ce6f4c6b",
+    "normal": 3.5,
+    "origin": {
+      "id": "CDD4655F-9314-4033-86E5-6579F5A0BEDE",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "21552B97-5DF8-4E82-86F7-93FA6D7E2565",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T12:56:32.140Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "3277acac3b25a3aec7f1e81dfb6f7cec",
+    "normal": 2,
+    "origin": {
+      "id": "4549E368-956C-4E7A-8A0B-2889992F5BE2",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "94289E50-86AA-4345-B48D-3254BD9C196C",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T11:36:34.868Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "963e7d07005678f227a7f3b2e74f2953",
+    "normal": 5,
+    "origin": {
+      "id": "DC3F903D-AA31-40B6-9489-110B3D95C1FC",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "C1211B52-5CA2-45CD-82B0-584AE0B96B02",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T10:21:07.540Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "5d7e122b7bf45f8afeb067da7c202033",
+    "normal": 0.5,
+    "origin": {
+      "id": "495EC809-1C0C-4DC9-93ED-49A6AB7A16C5",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "1F29F70D-5292-4D4C-A783-EB30D0A75D60",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T09:11:00.000Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "096f4045a812b66f6372df0806b4b487",
+    "normal": 2.5,
+    "origin": {
+      "id": "7B9AE9E5-959F-4D00-B863-544894C0E960",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "66DFF7F8-B992-43F2-A311-57DCBD978904",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T06:59:48.631Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "368b63d0df528d910d2bd88d3caabf38",
+    "normal": 4,
+    "origin": {
+      "id": "F1863EF2-5E06-4715-82E3-1EBA843E3863",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A0C2E6DD-ED0F-4412-A370-1B0D87A41963",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-03T04:55:18.196Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "3abc51c5941b0d803bf536e06b664b89",
+    "normal": 0.5,
+    "origin": {
+      "id": "88BFF741-1EE3-4FE1-B8D0-E3422280F212",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "6617318F-BEAF-44DF-91D5-353CF2AC2959",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T20:02:48.744Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "a3538f1fd1c8283b387d696a21b16c7c",
+    "normal": 7,
+    "origin": {
+      "id": "24DFAF3D-0615-44FE-962D-1C7A21115794",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7BF63A62-1DD9-4575-BA3C-FF41BFC907A6",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T17:36:05.453Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "bacfa046767797c2dcec309c22da4998",
+    "normal": 1.5,
+    "origin": {
+      "id": "3613FE1A-0B53-4245-835F-248BB8DE052B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "66ACB9C2-AB9E-4E99-B9C5-A84C083B98E9",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T13:45:16.228Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b8dde89798746e484898a3535ab29c64",
+    "normal": 3,
+    "origin": {
+      "id": "C7196D23-3A17-4792-9BB9-A567344337E3",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "FD1F2874-03E2-4291-8F5B-8F24F6A359B8",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T11:06:30.759Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "77f4d7c5110c118ab6915913ec39b2da",
+    "normal": 4,
+    "origin": {
+      "id": "2A787F87-A2F6-4C87-B559-D9E8D5B7F49F",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "EC4F3844-054C-4CD7-896F-A457305BB9D0",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T09:56:41.780Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "16d593ed99f927b280ee82822dfaace9",
+    "normal": 1,
+    "origin": {
+      "id": "DC6FD402-BF65-4DFC-8519-CEC4869C6392",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "0CEE795A-D3BA-4C5E-B126-697C287AEFEC",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T09:18:32.000Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "6e6506d6ebce5360ff0071930bc2fb8e",
+    "normal": 2,
+    "origin": {
+      "id": "D4D2988A-CF17-4BD2-B7EC-47020095E337",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "C8231AC1-5973-470B-8A6C-A21A953F4D23",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T07:25:14.511Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "36aa452c4aa8c3972f5b8fc5d7c8fb05",
+    "normal": 2,
+    "origin": {
+      "id": "7689704F-9CB9-48D8-AE74-B4255360A771",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "E68D93CA-4F97-452B-8319-954727D2AB81",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T05:37:42.962Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "121c4c90c0df2367c3b267959db8c5c9",
+    "normal": 3,
+    "origin": {
+      "id": "820C3A20-E1A3-4E78-A112-667CD86BF506",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "8BEA2C5C-CB3E-4161-AF13-584F63AC2701",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-02T05:06:44.707Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "9cca095f6fbd68665e18001e8deee879",
+    "normal": 3.5,
+    "origin": {
+      "id": "DFDE8BB0-D734-443C-A34B-4DA85D0BB88C",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "550F3853-D346-4C82-9C38-18B9E8F35177",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T18:34:36.869Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "7be5ce2d94acf486ebbd09a4830e5ecf",
+    "normal": 1.5,
+    "origin": {
+      "id": "0FDD3889-55E8-4876-9546-79D2872D8179",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "ED7A6A48-3F76-440C-BB63-5DE689646CCB",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T17:27:29.094Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "1e6a0f1e30d668bd455261fd0b8cc65e",
+    "normal": 1,
+    "origin": {
+      "id": "A0BBC070-667F-4292-8664-E28CFC104406",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "55BE146B-992A-4CD8-9E6A-506EBD144D22",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T16:15:04.764Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "4f50f8fbbe9758e1b499f9242a5f891d",
+    "normal": 2.5,
+    "origin": {
+      "id": "861ECDC6-BBDD-48BB-A3E1-2E54A17FA0D8",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "17AFDCAD-9521-4E37-98C9-3531048EAA52",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T14:47:19.499Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "f35d43704c93da4ce6a42b9cd33610a3",
+    "normal": 1,
+    "origin": {
+      "id": "D07A2782-A492-493C-8AB0-3FABC82713F7",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "64597C08-C676-47D2-8F84-73C828B3CA05",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T09:21:33.137Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "cfc36d93c6898c70c447fc701aab5ee9",
+    "normal": 4,
+    "origin": {
+      "id": "FA408B70-B79B-4235-82FB-2B90BD1BCE9E",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "5C08E699-6D25-49E7-908C-D574564CE4C4",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T08:50:53.069Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "9d4b1fd5bae1e82541afd3c6c4a30726",
+    "normal": 3,
+    "origin": {
+      "id": "F5B35EBF-A9AD-4520-B477-1200F05D39F2",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "FA43BD1C-AAAE-4198-98A1-F730C13998DF",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T06:34:11.193Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "275c74da46dc6cd06109e7337a49dd84",
+    "normal": 2,
+    "origin": {
+      "id": "A22247C6-FAE4-4C06-8E93-4924249177A3",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "25708880-A555-4AF0-99A0-7326B7AEEE9D",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-08-01T05:17:18.000Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b069b212bd3b5bd31a0cf4f6aa3c2250",
+    "normal": 1.5,
+    "origin": {
+      "id": "2821F1D3-E7F1-48ED-A892-195FC326A64A",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "2AC5D338-BC63-4BA1-8EE4-A04C55620143",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T21:50:39.770Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "89d0c47fee953b800981e8265c613c8c",
+    "normal": 5,
+    "origin": {
+      "id": "7CE46401-50C9-43B6-9FE5-477C3724C08F",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "13B99148-7D6F-46A6-8BF7-D965B06855C1",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T18:45:12.616Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b053725132f3408a16553ed0161e62a5",
+    "normal": 4,
+    "origin": {
+      "id": "5EF39227-14A5-4CF1-9DE2-993282EEEB14",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A82D9A67-FA0A-47D3-83F5-F51081A45773",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T16:34:32.431Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b4d593cbf8de4fc5d272ad01cec2a73f",
+    "normal": 3,
+    "origin": {
+      "id": "61AEE2C3-C9F5-423E-8364-60BB4C58A152",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A237BCED-AAF6-4973-B964-59DB3A3A958F",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T16:05:11.992Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "c61c890dfca47876a02c4d071edf3aaa",
+    "normal": 1,
+    "origin": {
+      "id": "2996CA25-9A67-4EEE-B14E-3A91CF76A602",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "6C64CE20-3DDE-471B-BC78-A02CDCEAAACD",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T13:14:13.670Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "be46cfc9c1fdee39bca5eab63e51c94b",
+    "normal": 4,
+    "origin": {
+      "id": "FBCA7E80-D15B-480F-A333-797A67F586A7",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7C28D177-9E37-4F8D-91C1-D1F89D858228",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T10:01:15.778Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "7beef13e254e05b4e62867ba173958c9",
+    "normal": 2,
+    "origin": {
+      "id": "22E82C61-0F0B-4E04-B0BE-E560537FAD1F",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "DFD96B4E-D25B-4249-B2F4-C2D125AC75AA",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T07:55:11.724Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "43c0ba6164dbe40175a56b1db171f885",
+    "normal": 5,
+    "origin": {
+      "id": "A616663F-465E-4B73-8376-21B327DEE05D",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "1E5272DF-1C78-4CF0-B2B4-F1961237CC8C",
+      "HKInsulinDeliveryReason": 2
+    },
+    "subType": "normal",
+    "time": "2020-07-31T05:01:53.946Z",
+    "type": "bolus",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  }
+]

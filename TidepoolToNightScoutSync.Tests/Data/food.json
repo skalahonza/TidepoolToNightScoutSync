@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "a3c03b820f6eb57ac8f48b4ebbac005e",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 60,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "899B1738-ABF3-42AF-A1A1-6C4970A87159",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "E110B10B-CCB1-4D18-A81F-E6B76A5D97E4"
+    },
+    "time": "2020-08-08T17:37:40.089Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "386b71170d5ff41810f4b1e4268bad77",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 26,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "CDBE18E5-F030-4906-9ED5-258661D4DD91",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "1C048E6B-03F1-43D8-B3F7-46345778E2C6"
+    },
+    "time": "2020-08-08T16:38:25.000Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b490b71f3149800dc9e9086f6aa99454",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "14A449FC-632C-4084-A103-B79CE0A94FC1",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "F4A151F5-0DD0-4B35-8E56-B14290461D02"
+    },
+    "time": "2020-08-08T13:19:24.990Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "71a2a5d6666ecbb7630dfc98f0847622",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 70,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "8CB815E7-AC24-442E-9F66-C2DDF6319C5C",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "8167E180-C35C-4E72-8228-D7E40DEB8BE3"
+    },
+    "time": "2020-08-08T10:00:16.352Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "941b8d0ca75fbda3ff678c870164f83c",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "973D51D4-8F64-4C92-AECE-F8F6664BBBD6",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "F7437316-ACDF-4719-A35C-A517DDC1EDAB"
+    },
+    "time": "2020-08-08T06:21:13.000Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "17e67b62e115ff10d9ea11deb86c9376",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "4A65C29E-D578-4327-8509-853584875783",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "26B22313-8364-48B5-87E3-02A349ADC452"
+    },
+    "time": "2020-08-07T20:23:05.880Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "36826921df8dd9288c8c8cff584c56dd",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "48534156-E377-409D-8B0C-7679151ACBDB",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "CBA3CD4B-2F50-4796-90A5-83D168BFF553"
+    },
+    "time": "2020-08-07T18:43:49.660Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "e23f77e87d345b6c82c568dd57df42c4",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "0F719CAC-F804-4047-AB94-32C24EAC6D75",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "F9BFB648-BDDC-4009-AAB1-D836BF7F6071"
+    },
+    "time": "2020-08-07T15:45:10.626Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "c3c9886540125eb2c1a5abaa52dca068",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "8FD56675-E777-469D-92D7-C568C03A8F16",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7185AA23-966F-4334-BA4C-094B3F282E1E"
+    },
+    "time": "2020-08-07T13:06:02.871Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "503e87c30ca1916a7270cda1b57e7004",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "19AC286D-9B04-47FA-A4D7-205CC1364A81",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "66CC60E2-6B17-4009-B573-24FC9CEDF599"
+    },
+    "time": "2020-08-07T09:06:36.626Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "f5483b0e7f2815dc174a8c567e563918",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "C69D7F25-2E3B-4035-891B-1C4D4BDB0AF3",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "DFE770B8-DADB-4B6E-BB28-7BC632E42111"
+    },
+    "time": "2020-08-07T05:04:28.245Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "d28bf5062f046c87cafb764e040ac628",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 52,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "2E49F143-14C4-4E30-A694-87ABD2B88E5E",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "AD2C6449-5672-4765-96D8-4D43E907BD5C"
+    },
+    "time": "2020-08-06T18:00:50.270Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b8655197ee2c339c966a619bb13a9308",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "DC773216-4C29-4AEA-A2B8-BC5701B539E5",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "13048208-247F-41F7-8DDB-78AD0D7A9E5A"
+    },
+    "time": "2020-08-06T14:24:29.175Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "bf04cf079a282e8fe850e50e867fc9eb",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "E98664D8-546F-4838-BBF7-21DDFC4DBFFA",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "667E9A21-6656-4C6B-80FC-5A79831F7EA2"
+    },
+    "time": "2020-08-06T11:04:07.887Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "408de83a78355d2a46e3f3ad582f8c63",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "B2F9F889-EB63-45B9-8E82-B8D627F44F5A",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "EB7035C3-BA9E-4D1E-837E-EF3DF25D2394"
+    },
+    "time": "2020-08-06T09:40:11.095Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b45815d2b65e10cc7909ef8f8f602c2a",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "71AF619B-0845-4472-B6BA-0CA51C47FE10",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "3C68DB4F-A81D-46C0-93E3-D764E39D2A56"
+    },
+    "time": "2020-08-05T22:35:05.771Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "7a8433061946216a3bf8d013f8274bd6",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "D0F8BD00-BA86-40FF-BB71-DFB7704FCE6D",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "BFABB749-4FF4-4050-A075-093403E545C7"
+    },
+    "time": "2020-08-05T17:11:36.524Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b9d243cd3c59c2a340bad605b91aef51",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 23,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "7EFCD935-350C-4C86-A19C-9393CB6D9746",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "1EB32BBC-0B7B-44D4-9724-AE2BAD97C835"
+    },
+    "time": "2020-08-05T14:36:00.000Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "6d8bc342e675cabafdb9eed956b04cc4",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 33,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "6910FD86-5115-4F3F-B650-C3D159C53338",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "0CE0DDB2-A38A-4CDE-98A6-82EAE14D054D"
+    },
+    "time": "2020-08-05T12:26:25.719Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "24ab92b9c89f3678e9fbf00d2b81d579",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "D2A2F0DA-0B03-43BC-9B10-015C006AC64F",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "00DF4B4E-0D39-4C2A-AE7F-CB3620236962"
+    },
+    "time": "2020-08-05T09:14:57.828Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "e58162c14612a9efc51db91e70228d12",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "EF13414B-64AA-435A-8693-159B5F4A6E4E",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A2B3F0F8-F792-4BED-A008-71CAB4C86B0B"
+    },
+    "time": "2020-08-04T18:10:51.695Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "ceb90d5ee2a9ab79b652ce6db2530527",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 23,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "C4A44DBA-E763-4A4A-90D4-8F3A6D09AA99",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "30B395B4-F63D-4DDE-BC0C-ED69DF5F8F14"
+    },
+    "time": "2020-08-04T15:33:01.726Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "9d680761f78381fc450cafb5ddce9e35",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "6807CFCA-EB23-4E98-9AA0-6E66082491FA",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "39C7E1C4-C069-4112-964E-AC84A6DFE18B"
+    },
+    "time": "2020-08-04T15:21:34.383Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "cd16e29f603b530cc33607ab7eb61590",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 36,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "6576B16F-56CA-499C-BC57-E43850FBDAE6",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "20FB1538-6629-4F73-8F2A-1F19214FA541"
+    },
+    "time": "2020-08-04T09:57:20.415Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "a3aca2e130831ea06a0c8473f22720e1",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 12,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "5FD7DF9D-0BC6-473E-936A-8941979F86D9",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "859C2DF7-8437-4036-914A-6CB4DB8995BF"
+    },
+    "time": "2020-08-04T06:15:58.240Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "97679b912e4b8489ac0741def6ba6b97",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "0F2D5C9E-4B2C-4C6A-8404-FF0C16FFB025",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "D53B13AF-1441-456C-BF26-4D68019D9138"
+    },
+    "time": "2020-08-03T17:43:04.593Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "63c6bb8afebc6464be934911d6222b10",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 28,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "1AD63344-896B-4B49-AF6B-A2CF42097C8B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "94289E50-86AA-4345-B48D-3254BD9C196C"
+    },
+    "time": "2020-08-03T11:36:34.868Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "1e50ac3433f15e9335b7adcdaebb4f0b",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 60,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "8938041B-EEE8-4B43-A701-50B73555D2AF",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "C1211B52-5CA2-45CD-82B0-584AE0B96B02"
+    },
+    "time": "2020-08-03T10:21:07.540Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "ec6875cebd34233d352b529388d3e7fe",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 18,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "2C43C6FD-DD1C-4927-BF4E-5A2FE9E79D38",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "98DD12FF-DBD3-458D-A340-FE4908346D1D"
+    },
+    "time": "2020-08-03T08:03:53.000Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "6741270abda21f23495d788e8216cec8",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "67B0104A-4EEB-4A71-98FF-7D6B7CD792E9",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A0C2E6DD-ED0F-4412-A370-1B0D87A41963"
+    },
+    "time": "2020-08-03T04:55:18.196Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "d8f0001445eb141cb734630ecce1b287",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 72,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "E6CE043B-91D2-4293-9193-C80BD62E6EDA",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7BF63A62-1DD9-4575-BA3C-FF41BFC907A6"
+    },
+    "time": "2020-08-02T17:36:05.453Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "0fd1e648b99d649580a259829c46e119",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 36,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "E7CA67CA-CDAA-4337-A706-92BAB1BD6C47",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "FD1F2874-03E2-4291-8F5B-8F24F6A359B8"
+    },
+    "time": "2020-08-02T11:06:30.759Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "4af8659eec24111d00442ca8987afd7c",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "BFC1AA8E-F657-4BE9-8193-4590DF7C595B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "EC4F3844-054C-4CD7-896F-A457305BB9D0"
+    },
+    "time": "2020-08-02T09:56:41.780Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "1b6900f39a5dbfd31337764e52d6bcc4",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "926772F7-12D6-42E9-8883-C386DA959BDC",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "E68D93CA-4F97-452B-8319-954727D2AB81"
+    },
+    "time": "2020-08-02T05:37:42.962Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "503377882dc66da1cc5059492dc74c59",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 34,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "5AF380CA-6430-4735-A4B0-79F62528CA5F",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "ED7A6A48-3F76-440C-BB63-5DE689646CCB"
+    },
+    "time": "2020-08-01T17:27:29.094Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "0e0fa644abd53c722edde1679295aab5",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "776CC493-E2C2-4B45-9414-E5E760936981",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "DD04A912-3213-476B-B88A-6E4F58F9972E"
+    },
+    "time": "2020-08-01T17:13:04.695Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "402e18578b04701a1980bce56abfa076",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "B56A9320-DF71-4D9E-B76D-8282B0E57D45",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "17AFDCAD-9521-4E37-98C9-3531048EAA52"
+    },
+    "time": "2020-08-01T14:47:19.499Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "463dae51ca1a95738ed0cb6843da86b2",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 12,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "6E3E7CEE-9EEB-488D-89AD-4D8F138759BF",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "64597C08-C676-47D2-8F84-73C828B3CA05"
+    },
+    "time": "2020-08-01T09:21:33.137Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "92c151e54b33e2371d5123cc5eb3fe70",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "1477D083-C52E-4872-8867-606B4760456B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "5C08E699-6D25-49E7-908C-D574564CE4C4"
+    },
+    "time": "2020-08-01T08:50:53.069Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "b8bc3a015b593e6176d159e1b9dc7606",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "9B961DD0-8F25-4F7A-859F-0509D37C0500",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "25708880-A555-4AF0-99A0-7326B7AEEE9D"
+    },
+    "time": "2020-08-01T05:17:18.110Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "e52c6541b645f810ad3001407efd6575",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "61CFF86E-D4B3-480B-85A2-046D3EA8DBDB",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "9117A9FD-639F-4FA6-AE4A-D15E5E9879E8"
+    },
+    "time": "2020-07-31T20:24:08.998Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "95015d6450ada5306e95cadd05027fa8",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 48,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "161A9A83-A7CD-470F-A2E2-DA64B1D50379",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A82D9A67-FA0A-47D3-83F5-F51081A45773"
+    },
+    "time": "2020-07-31T16:34:32.431Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "64a8a4f7e9a9d56fbb2cc8326e924bc5",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 28,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "8768D4BB-2B92-4185-9218-A667A9AF9551",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "A237BCED-AAF6-4973-B964-59DB3A3A958F"
+    },
+    "time": "2020-07-31T16:05:11.992Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "fe800840ff15331727631055d7f2dc0f",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "49B103DF-7080-4E9B-A0EA-241776172BC7",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "6C64CE20-3DDE-471B-BC78-A02CDCEAAACD"
+    },
+    "time": "2020-07-31T13:14:13.670Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "cc7713e7bdfdf73d4d5146ca2d17fcac",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 56,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "62DA0AA2-C1C9-457E-98D3-4A0A230DB9EC",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "7C28D177-9E37-4F8D-91C1-D1F89D858228"
+    },
+    "time": "2020-07-31T10:01:15.778Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "id": "393a53df8eba7b6b7fdc7c79d7b0d034",
+    "nutrition": {
+      "carbohydrate": {
+        "net": 24,
+        "units": "grams"
+      }
+    },
+    "origin": {
+      "id": "B6E9A025-4B4B-4503-8ED0-4ABDD7E10D9B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "sourceRevision": {
+          "operatingSystemVersion": "13.5.1",
+          "productType": "iPhone9,3",
+          "source": {
+            "bundleIdentifier": "com.mysugr.companion.mySugr",
+            "name": "mySugr"
+          },
+          "version": "36760"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKExternalUUID": "DFD96B4E-D25B-4249-B2F4-C2D125AC75AA"
+    },
+    "time": "2020-07-31T07:55:11.724Z",
+    "type": "food",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  }
+]

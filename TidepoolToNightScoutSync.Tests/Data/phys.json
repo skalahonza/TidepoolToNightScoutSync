@@ -1,0 +1,298 @@
+[
+  {
+    "distance": {
+      "units": "miles",
+      "value": 0.06462260399268273
+    },
+    "duration": {
+      "units": "seconds",
+      "value": 490.03956496715546
+    },
+    "energy": {
+      "units": "kilocalories",
+      "value": 72.7714249015287
+    },
+    "id": "e7e470a7e5852459a31684077145fede",
+    "name": "Swimming - 0.06 miles",
+    "origin": {
+      "id": "F79CD0C6-130F-42C6-AEBE-D46A48883F5D",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "device": {
+          "hardwareVersion": "Watch4,2",
+          "manufacturer": "Apple Inc.",
+          "model": "Watch",
+          "name": "Apple Watch",
+          "softwareVersion": "6.2.8"
+        },
+        "sourceRevision": {
+          "operatingSystemVersion": "6.2.8",
+          "productType": "Watch4,2",
+          "source": {
+            "bundleIdentifier": "com.apple.health.7DB6DEE1-EB02-4CE5-B847-59FB790E9A84",
+            "name": "Jan - Apple Watch"
+          },
+          "version": "6.2.8"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKAverageMETs": "7.47914 kcal/hr·kg",
+      "HKIndoorWorkout": 0,
+      "HKLapLength": "8 m",
+      "HKSwimmingLocationType": 1,
+      "HKTimeZone": "Europe/Prague",
+      "HKWeatherHumidity": "54 %",
+      "HKWeatherTemperature": "77 degF"
+    },
+    "time": "2020-08-06T11:50:58.702Z",
+    "type": "physicalActivity",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "distance": {
+      "units": "miles",
+      "value": 0.6751166736801949
+    },
+    "duration": {
+      "units": "seconds",
+      "value": 1165.1135140657425
+    },
+    "energy": {
+      "units": "kilocalories",
+      "value": 69.16270323168783
+    },
+    "id": "bb4cf3061e8cdc1303374110a61e9b06",
+    "name": "Walking - 0.68 miles",
+    "origin": {
+      "id": "9B019C7E-7336-4C21-BDD3-8CB4AEFA829B",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "device": {
+          "hardwareVersion": "Watch4,2",
+          "manufacturer": "Apple Inc.",
+          "model": "Watch",
+          "name": "Apple Watch",
+          "softwareVersion": "6.2.8"
+        },
+        "sourceRevision": {
+          "operatingSystemVersion": "6.2.8",
+          "productType": "Watch4,2",
+          "source": {
+            "bundleIdentifier": "com.apple.health.7DB6DEE1-EB02-4CE5-B847-59FB790E9A84",
+            "name": "Jan - Apple Watch"
+          },
+          "version": "6.2.8"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKAverageMETs": "3.56803 kcal/hr·kg",
+      "HKIndoorWorkout": 0,
+      "HKTimeZone": "Europe/Prague",
+      "HKWeatherHumidity": "54 %",
+      "HKWeatherTemperature": "77 degF"
+    },
+    "time": "2020-08-06T11:05:34.938Z",
+    "type": "physicalActivity",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "distance": {
+      "units": "miles",
+      "value": 0.07157304248404431
+    },
+    "duration": {
+      "units": "seconds",
+      "value": 315.8815120458603
+    },
+    "energy": {
+      "units": "kilocalories",
+      "value": 10.767585548525467
+    },
+    "id": "25a36e0b790b08257d5d5a7625920b07",
+    "name": "Walking - 0.07 miles",
+    "origin": {
+      "id": "9C489A60-E914-4891-B8EF-F898A1DBC7CE",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "device": {
+          "hardwareVersion": "Watch4,2",
+          "manufacturer": "Apple Inc.",
+          "model": "Watch",
+          "name": "Apple Watch",
+          "softwareVersion": "6.2.8"
+        },
+        "sourceRevision": {
+          "operatingSystemVersion": "6.2.8",
+          "productType": "Watch4,2",
+          "source": {
+            "bundleIdentifier": "com.apple.health.7DB6DEE1-EB02-4CE5-B847-59FB790E9A84",
+            "name": "Jan - Apple Watch"
+          },
+          "version": "6.2.8"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKAverageMETs": "2.49536 kcal/hr·kg",
+      "HKIndoorWorkout": 0,
+      "HKTimeZone": "Europe/Prague",
+      "HKWeatherHumidity": "33 %",
+      "HKWeatherTemperature": "77 degF"
+    },
+    "time": "2020-08-01T09:57:38.883Z",
+    "type": "physicalActivity",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "distance": {
+      "units": "miles",
+      "value": 1.0282056706114582
+    },
+    "duration": {
+      "units": "seconds",
+      "value": 2194.961884021759
+    },
+    "energy": {
+      "units": "kilocalories",
+      "value": 109.93663824423861
+    },
+    "id": "5b28b91397464d6807bd91882c1f8f18",
+    "name": "Walking - 1.03 miles",
+    "origin": {
+      "id": "923EB788-70E6-4F5F-B1A3-33547B4396E8",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "device": {
+          "hardwareVersion": "Watch4,2",
+          "manufacturer": "Apple Inc.",
+          "model": "Watch",
+          "name": "Apple Watch",
+          "softwareVersion": "6.2.8"
+        },
+        "sourceRevision": {
+          "operatingSystemVersion": "6.2.8",
+          "productType": "Watch4,2",
+          "source": {
+            "bundleIdentifier": "com.apple.health.7DB6DEE1-EB02-4CE5-B847-59FB790E9A84",
+            "name": "Jan - Apple Watch"
+          },
+          "version": "6.2.8"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKAverageMETs": "3.21667 kcal/hr·kg",
+      "HKElevationAscended": "1156 cm",
+      "HKIndoorWorkout": 0,
+      "HKTimeZone": "Europe/Prague",
+      "HKWeatherHumidity": "36 %",
+      "HKWeatherTemperature": "81 degF"
+    },
+    "time": "2020-07-31T15:52:45.384Z",
+    "type": "physicalActivity",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "duration": {
+      "units": "seconds",
+      "value": 344.1933799982071
+    },
+    "energy": {
+      "units": "kilocalories",
+      "value": 6.606493683006673
+    },
+    "id": "41a49af40b7a739551cdb7b3197bd37b",
+    "name": "Swimming",
+    "origin": {
+      "id": "B24367E8-A65E-4182-9D11-6B8DF55690A3",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "device": {
+          "hardwareVersion": "Watch4,2",
+          "manufacturer": "Apple Inc.",
+          "model": "Watch",
+          "name": "Apple Watch",
+          "softwareVersion": "6.2.8"
+        },
+        "sourceRevision": {
+          "operatingSystemVersion": "6.2.8",
+          "productType": "Watch4,2",
+          "source": {
+            "bundleIdentifier": "com.apple.health.7DB6DEE1-EB02-4CE5-B847-59FB790E9A84",
+            "name": "Jan - Apple Watch"
+          },
+          "version": "6.2.8"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKAverageMETs": "2.1 kcal/hr·kg",
+      "HKIndoorWorkout": 0,
+      "HKLapLength": "8 m",
+      "HKSwimmingLocationType": 1,
+      "HKTimeZone": "Europe/Prague",
+      "HKWeatherHumidity": "35 %",
+      "HKWeatherTemperature": "82 degF"
+    },
+    "time": "2020-07-31T14:50:30.668Z",
+    "type": "physicalActivity",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  },
+  {
+    "distance": {
+      "units": "miles",
+      "value": 0.9240803578369231
+    },
+    "duration": {
+      "units": "seconds",
+      "value": 1825.275582909584
+    },
+    "energy": {
+      "units": "kilocalories",
+      "value": 92.01211810668376
+    },
+    "id": "86c151c9a437f20b775a7cdec01ecf74",
+    "name": "Walking - 0.92 miles",
+    "origin": {
+      "id": "B17C1CD2-A9C9-4251-88A0-8136B556D1C0",
+      "name": "com.apple.HealthKit",
+      "payload": {
+        "device": {
+          "hardwareVersion": "Watch4,2",
+          "manufacturer": "Apple Inc.",
+          "model": "Watch",
+          "name": "Apple Watch",
+          "softwareVersion": "6.2.8"
+        },
+        "sourceRevision": {
+          "operatingSystemVersion": "6.2.8",
+          "productType": "Watch4,2",
+          "source": {
+            "bundleIdentifier": "com.apple.health.7DB6DEE1-EB02-4CE5-B847-59FB790E9A84",
+            "name": "Jan - Apple Watch"
+          },
+          "version": "6.2.8"
+        }
+      },
+      "type": "service"
+    },
+    "payload": {
+      "HKAverageMETs": "3.2137 kcal/hr·kg",
+      "HKElevationAscended": "318 cm",
+      "HKIndoorWorkout": 0,
+      "HKTimeZone": "Europe/Prague",
+      "HKWeatherHumidity": "34 %",
+      "HKWeatherTemperature": "81 degF"
+    },
+    "time": "2020-07-31T12:59:31.900Z",
+    "type": "physicalActivity",
+    "uploadId": "2f1be6a1baed52801af2e992ac7da1fb"
+  }
+]

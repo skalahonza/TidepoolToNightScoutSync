@@ -26,7 +26,7 @@ namespace TidepoolToNightScoutSync.BL.Extensions
 
         public static IServiceCollection AddTidepoolClient(this IServiceCollection services, Action<TidepoolClientOptions, IConfiguration> configureOptions)
         {
-            services.AddHttpClient<TidepoolClientFactory>();
+            services.AddHttpClient<ITidepoolClientFactory, TidepoolClientFactory>();
             services.AddOptions<TidepoolClientOptions>().Configure(configureOptions);
             return services;
         }

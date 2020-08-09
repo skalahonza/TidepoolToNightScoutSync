@@ -10,7 +10,7 @@ using TidepoolToNightScoutSync.BL.Model.Tidepool;
 
 namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 {
-    public class TidepoolClient
+    public class TidepoolClient : ITidepoolClient
     {
         private readonly IClient _client;
         private readonly TidepoolClientOptions _options;

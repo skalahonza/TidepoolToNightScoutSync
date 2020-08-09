@@ -11,7 +11,7 @@ using TidepoolToNightScoutSync.BL.Model.Tidepool;
 
 namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 {
-    public class TidepoolClientFactory
+    public class TidepoolClientFactory : ITidepoolClientFactory
     {
         private readonly IClient _client;
         private readonly TidepoolClientOptions _options;
@@ -22,7 +22,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
             _client = new FluentClient(new Uri(_options.BaseUrl), client);
         }
 
-        private async Task<TidepoolClient> AuthorizeAsync()
+        private async Task<ITidepoolClient> AuthorizeAsync()
         {
             var response = await _client
                 .PostAsync("auth/login")
@@ -38,7 +38,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
             return new TidepoolClient(_client, _options);
         }
 
-        public Task<TidepoolClient> CreateAsync() =>
+        public Task<ITidepoolClient> CreateAsync() =>
               AuthorizeAsync();
     }
 }

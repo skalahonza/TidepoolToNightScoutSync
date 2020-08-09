@@ -13,12 +13,12 @@ namespace TidepoolToNightScoutSync.BL.Services
 {
     public class TidepoolToNightScoutSyncer
     {
-        private readonly TidepoolClientFactory _factory;
+        private readonly ITidepoolClientFactory _factory;
         private readonly NightscoutClient _nightscout;
         private readonly TidepoolToNightScoutSyncerOptions _options;
-        private TidepoolClient? tidepool;
+        private ITidepoolClient? tidepool;
 
-        public TidepoolToNightScoutSyncer(TidepoolClientFactory factory, NightscoutClient nightscout, IOptions<TidepoolToNightScoutSyncerOptions> options)
+        public TidepoolToNightScoutSyncer(ITidepoolClientFactory factory, NightscoutClient nightscout, IOptions<TidepoolToNightScoutSyncerOptions> options)
         {
             _factory = factory;
             _nightscout = nightscout;

@@ -5,10 +5,7 @@ volumes:
 
 services:
   nightscout:
-    image: "skalahonza/nightscout"
-    build:
-      context: .
-      dockerfile: Dockerfile    
+    image: "skalahonza/nightscout"    
     environment:
       API_SECRET: "${API_SECRET:-123456789abc}"
       MONGO_CONNECTION: 'mongodb://${MONGODB_USERNAME:-nightscout}:${MONGODB_PASSWORD:-secret}@database/nightscout?retryWrites=true&w=majority&authSource=admin'
@@ -25,7 +22,7 @@ services:
       - "5001:1337"
 
   database:
-    image: mongo:3
+    image: mongo:latest
     environment:
       MONGO_INITDB_DATABASE: nightscout
       MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USERNAME:-nightscout}
