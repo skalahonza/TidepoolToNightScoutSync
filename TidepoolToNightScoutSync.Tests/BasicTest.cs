@@ -14,7 +14,6 @@ using System.IO;
 using System.Collections.Generic;
 using TidepoolToNightScoutSync.BL.Model.Tidepool;
 using FluentAssertions;
-using System.Linq;
 
 namespace TidepoolToNightScoutSync.Tests
 {
@@ -59,14 +58,39 @@ namespace TidepoolToNightScoutSync.Tests
         [Fact]
         public async Task SyncAsync()
         {
+            // Arrange
             var boluses = await _tidepool.GetBolusAsync();
             var food = await _tidepool.GetFoodAsync();
-            var activity = await _tidepool.GetPhysicalActivityAsync();
+            var activities = await _tidepool.GetPhysicalActivityAsync();
+
+            // Act
             var treatments = await _syncer.SyncAsync();
 
-            boluses.All(x => treatments.Count(t => t.Insulin == x.Normal && t.CreatedAt == x.Time) == 1).Should().BeTrue();
-            food.All(x => treatments.Count(t => t.Carbs == x.Nutrition?.Carbohydrate?.Net && t.CreatedAt == x.Time) == 1).Should().BeTrue();
-            activity.All(x => treatments.Count(t => t.Notes == x.Name && t.Duration == x.Duration?.Value / 60 && t.CreatedAt == x.Time) == 1).Should().BeTrue();
+            // Assert
+
+            // Boluses
+            foreach (var bolus in boluses)
+            {
+                treatments.Should().ContainSingle(
+                    t => t.Insulin == bolus.Normal && t.CreatedAt == bolus.Time,
+                    because: "Every bolus should be synced exactly once.");
+            }
+
+            // Food
+            foreach (var item in food)
+            {
+                treatments.Should().ContainSingle(
+                    t => t.Carbs == item.Nutrition.Carbohydrate.Net && t.CreatedAt == item.Time,
+                    because: "Every food should be synced exactly once.");
+            }
+
+            // Activities
+            foreach (var activity in activities)
+            {
+                treatments.Should().ContainSingle(
+                    t => t.Notes == activity.Name && t.Duration == activity.Duration.Value / 60 && t.CreatedAt == activity.Time,
+                    because: "Every activity should be synced exactly once.");
+            }
         }
     }
 }
