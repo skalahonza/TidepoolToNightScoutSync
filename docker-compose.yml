@@ -13,7 +13,7 @@ services:
       - nightscout
 
   nightscout:
-    image: "skalahonza/nightscout"    
+    image: "nightscout/cgm-remote-monitor:14.2.2"    
     environment:
       API_SECRET: "${API_SECRET:-123456789abc}"
       MONGO_CONNECTION: 'mongodb://${MONGODB_USERNAME:-nightscout}:${MONGODB_PASSWORD:-secret}@database/nightscout?retryWrites=true&w=majority&authSource=admin'
