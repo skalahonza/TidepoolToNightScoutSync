@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -27,6 +28,7 @@ namespace TidepoolToNightScoutSync.BL.Services
 
         public async Task SyncProfiles(DateTime? since = null, DateTime? till = null)
         {
+            var nfi = new CultureInfo("en-US", false).NumberFormat;
             since ??= _options.Since ?? DateTime.Today;
             till ??= _options.Till;
             tidepool ??= await _factory.CreateAsync();
@@ -51,7 +53,7 @@ namespace TidepoolToNightScoutSync.BL.Services
                 {
                     Time = TimeSpan.FromSeconds(x.Start / 1000).ToString(@"hh\:mm"),
                     TimeAsSeconds = (x.Start / 1000).ToString(),
-                    Value = x.Rate.ToString()
+                    Value = x.Rate.ToString(nfi)
                 }));
             }
 
@@ -67,14 +69,14 @@ namespace TidepoolToNightScoutSync.BL.Services
                     {
                         Time = TimeSpan.FromSeconds(target.Start / 1000).ToString(@"hh\:mm"),
                         TimeAsSeconds = (target.Start / 1000).ToString(),
-                        Value = _options.TargetLow.ToString(),
+                        Value = _options.TargetLow.ToString(nfi),
                     });
 
                     profile.Store[name].TargetHigh.Add(new Target
                     {
                         Time = TimeSpan.FromSeconds(target.Start / 1000).ToString(@"hh\:mm"),
                         TimeAsSeconds = (target.Start / 1000).ToString(),
-                        Value = (_options.TargetLow + target.Target).ToString(),
+                        Value = (_options.TargetLow + target.Target).ToString(nfi),
                     });
                 }
             }
@@ -87,7 +89,7 @@ namespace TidepoolToNightScoutSync.BL.Services
                 {
                     Time = TimeSpan.FromSeconds(x.Start / 1000).ToString(@"hh\:mm"),
                     TimeAsSeconds = (x.Start / 1000).ToString(),
-                    Value = x.Amount.ToString()
+                    Value = x.Amount.ToString(nfi)
                 }));
             }
 
@@ -99,7 +101,7 @@ namespace TidepoolToNightScoutSync.BL.Services
                 {
                     Time = TimeSpan.FromSeconds(x.Start / 1000).ToString(@"hh\:mm"),
                     TimeAsSeconds = (x.Start / 1000).ToString(),
-                    Value = x.Amount.ToString()
+                    Value = x.Amount.ToString(nfi)
                 }));
             }
 
