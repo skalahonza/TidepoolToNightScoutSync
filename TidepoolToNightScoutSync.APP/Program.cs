@@ -16,8 +16,8 @@ namespace TidepoolToNightScoutSync.APP
         {
             var configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
-                .AddUserSecrets<Program>()
                 .AddEnvironmentVariables()
+                .AddUserSecrets<Program>()
                 .AddCommandLine(args)
                 .Build();
 
@@ -37,6 +37,7 @@ namespace TidepoolToNightScoutSync.APP
                 .BuildServiceProvider();
 
             var syncer = services.GetRequiredService<TidepoolToNightScoutSyncer>();
+            await syncer.SyncProfiles();
             await syncer.SyncAsync();
         }
     }

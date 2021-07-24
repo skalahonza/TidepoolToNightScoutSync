@@ -44,5 +44,13 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
                 .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
                 .WithArgument("type", nameof(DataType.PhysicalActivity).ToCamelCase())
                 .AsArray<PhysicalActivity>();
+
+        public async Task<IReadOnlyList<PumpSettings>> GetPumpSettingsAsync(DateTime? start = null, DateTime? end = null) =>
+            await _client
+                .GetAsync($"data/{_options.UserId}")
+                .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
+                .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
+                .WithArgument("type", nameof(DataType.PumpSettings).ToCamelCase())
+                .AsArray<PumpSettings>();
     }
 }
