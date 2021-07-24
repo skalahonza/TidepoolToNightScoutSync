@@ -30,15 +30,10 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
                 .GetAsync("api/v1/profile")
                 .AsArray<Profile>();
 
-        public async Task<Profile> SetProfile(Profile profile)
-        {
-            //var currentProfiles = await GetProfiles();
-            //var id = currentProfiles.FirstOrDefault()?.Id;
-            //profile.Id = id;
-            return await _client
+        public async Task<Profile> SetProfile(Profile profile) =>
+            await _client
                .PutAsync("api/v1/profile", profile)
                .As<Profile>();
-        }
 
         public async Task<IReadOnlyList<Treatment>> AddTreatmentsAsync(IEnumerable<Treatment> treatments) =>
             await _client
