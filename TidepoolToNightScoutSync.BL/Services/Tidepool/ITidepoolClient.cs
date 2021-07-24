@@ -11,5 +11,6 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
         Task<IReadOnlyList<Bolus>> GetBolusAsync(DateTime? start = null, DateTime? end = null);
         Task<IReadOnlyList<Food>> GetFoodAsync(DateTime? start = null, DateTime? end = null);
         Task<IReadOnlyList<PhysicalActivity>> GetPhysicalActivityAsync(DateTime? start = null, DateTime? end = null);
+        Task<IReadOnlyList<PumpSettings>> GetPumpSettingsAsync(DateTime? start = null, DateTime? end = null);
     }
 }

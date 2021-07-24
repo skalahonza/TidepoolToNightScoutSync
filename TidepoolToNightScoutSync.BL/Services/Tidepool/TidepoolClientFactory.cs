@@ -33,7 +33,9 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
             _client.AddDefault(x => x.WithHeader("x-tidepool-session-token", token));
 
             var authResponse = await response.As<AuthResponse>();
-            _options.UserId = authResponse.Userid;
+
+            if(string.IsNullOrEmpty(_options.UserId))
+                _options.UserId = authResponse.Userid;
 
             return new TidepoolClient(_client, _options);
         }

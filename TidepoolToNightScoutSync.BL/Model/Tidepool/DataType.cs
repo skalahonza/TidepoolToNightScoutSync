@@ -4,6 +4,7 @@
     {
         Bolus,
         Food,
-        PhysicalActivity
+        PhysicalActivity,
+        PumpSettings
     }
 }

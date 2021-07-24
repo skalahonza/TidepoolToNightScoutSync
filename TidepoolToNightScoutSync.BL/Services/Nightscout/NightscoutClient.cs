@@ -4,6 +4,7 @@ using Pathoschild.Http.Client;
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -22,6 +23,21 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
             _client = new FluentClient(new Uri(_options.BaseUrl), client);
             _client.AddDefault(x => x.WithArgument("token", _options.ApiKey));
             _client.Formatters.JsonFormatter.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+        }
+
+        public async Task<IReadOnlyList<Profile>> GetProfiles() =>
+            await _client
+                .GetAsync("api/v1/profile")
+                .AsArray<Profile>();
+
+        public async Task<Profile> SetProfile(Profile profile)
+        {
+            //var currentProfiles = await GetProfiles();
+            //var id = currentProfiles.FirstOrDefault()?.Id;
+            //profile.Id = id;
+            return await _client
+               .PutAsync("api/v1/profile", profile)
+               .As<Profile>();
         }
 
         public async Task<IReadOnlyList<Treatment>> AddTreatmentsAsync(IEnumerable<Treatment> treatments) =>
