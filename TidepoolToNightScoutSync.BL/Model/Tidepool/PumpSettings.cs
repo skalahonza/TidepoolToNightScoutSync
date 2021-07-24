@@ -19,6 +19,9 @@ namespace TidepoolToNightScoutSync.BL.Model.Tidepool
         [JsonProperty("basalSchedules")]
         public IReadOnlyDictionary<string, IReadOnlyList<BasalSchedule>> BasalSchedules { get; set; } = new Dictionary<string, IReadOnlyList<BasalSchedule>>();
 
+        [JsonProperty("bgTargets")]
+        public IReadOnlyDictionary<string, IReadOnlyList<GlucoseTarget>> BgTargets { get; set; } = new Dictionary<string, IReadOnlyList<GlucoseTarget>>();
+
         [JsonProperty("units")]
         public Unit Units { get; set; } = new Unit();
     }

@@ -55,7 +55,29 @@ namespace TidepoolToNightScoutSync.BL.Services
                 }));
             }
 
-            // map bg targets
+            // map bg targets            
+            foreach (var (name, targets) in setting.BgTargets.Select(x => (x.Key, x.Value)))
+            {
+                profile.Store.TryAdd(name, new ProfileInfo());
+                foreach (var target in targets)
+                {
+                    // convert target glucose to target glucose interval
+
+                    profile.Store[name].TargetLow.Add(new Target
+                    {
+                        Time = TimeSpan.FromSeconds(target.Start / 1000).ToString(@"hh\:mm"),
+                        TimeAsSeconds = (target.Start / 1000).ToString(),
+                        Value = _options.TargetLow.ToString(),
+                    });
+
+                    profile.Store[name].TargetHigh.Add(new Target
+                    {
+                        Time = TimeSpan.FromSeconds(target.Start / 1000).ToString(@"hh\:mm"),
+                        TimeAsSeconds = (target.Start / 1000).ToString(),
+                        Value = (_options.TargetLow + target.Target).ToString(),
+                    });
+                }
+            }
 
             // map carb ratios
 
