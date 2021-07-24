@@ -61,8 +61,8 @@ namespace TidepoolToNightScoutSync.BL.Services
                 profile.Store.TryAdd(name, new ProfileInfo());
                 foreach (var target in targets)
                 {
-                    // convert target glucose to target glucose interval
-
+                    // convert from target glucose value to target glucose interval
+                    // e.g. 6,66089758925464 -->  (3.7, 10.360897589254641)
                     profile.Store[name].TargetLow.Add(new Target
                     {
                         Time = TimeSpan.FromSeconds(target.Start / 1000).ToString(@"hh\:mm"),
@@ -80,6 +80,16 @@ namespace TidepoolToNightScoutSync.BL.Services
             }
 
             // map carb ratios
+            foreach (var (name, carbRatios) in setting.CarbRatios.Select(x => (x.Key, x.Value)))
+            {
+                profile.Store.TryAdd(name, new ProfileInfo());
+                profile.Store[name].Carbratio.AddRange(carbRatios.Select(x => new Carbratio
+                {
+                    Time = TimeSpan.FromSeconds(x.Start / 1000).ToString(@"hh\:mm"),
+                    TimeAsSeconds = (x.Start / 1000).ToString(),
+                    Value = x.Amount.ToString()
+                }));
+            }
 
             // map insulin sensitivities
 
