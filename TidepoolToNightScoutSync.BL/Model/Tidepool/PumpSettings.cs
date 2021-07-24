@@ -21,6 +21,9 @@ namespace TidepoolToNightScoutSync.BL.Model.Tidepool
 
         [JsonProperty("bgTargets")]
         public IReadOnlyDictionary<string, IReadOnlyList<GlucoseTarget>> BgTargets { get; set; } = new Dictionary<string, IReadOnlyList<GlucoseTarget>>();
+        
+        [JsonProperty("carbRatios")]
+        public IReadOnlyDictionary<string, IReadOnlyList<CarbRatio>> CarbRatios { get; set; } = new Dictionary<string, IReadOnlyList<CarbRatio>>();        
 
         [JsonProperty("units")]
         public Unit Units { get; set; } = new Unit();
