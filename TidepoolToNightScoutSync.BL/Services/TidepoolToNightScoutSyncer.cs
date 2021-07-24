@@ -103,6 +103,10 @@ namespace TidepoolToNightScoutSync.BL.Services
                 }));
             }
 
+            // try to match on existing profile
+            var profiles = await _nightscout.GetProfiles();
+            profile.Id = profiles.FirstOrDefault(x => x.Mills == profile.Mills)?.Id;
+
             await _nightscout.SetProfile(profile);
         }
 
