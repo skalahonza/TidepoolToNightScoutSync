@@ -44,13 +44,14 @@ namespace TidepoolToNightScoutSync.API
             ExecuteSafeAsync(_syncer.SyncAsync());
 
         [FunctionName(nameof(Sync))]
-        public Task Sync([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req, ILogger log)
+        public async Task Sync([HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req, ILogger log)
         {
             req.Query.TryGetValue("since", out var sinceValue);
             req.Query.TryGetValue("till", out var tillValue);
             var since = TryParse(sinceValue);
             var till = TryParse(tillValue);
-            return ExecuteSafeAsync(_syncer.SyncAsync(since, till));
+            await ExecuteSafeAsync(_syncer.SyncProfiles(since, till));
+            await ExecuteSafeAsync(_syncer.SyncAsync(since, till));
         }
     }
 }
