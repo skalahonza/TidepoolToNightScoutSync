@@ -6,5 +6,6 @@ namespace TidepoolToNightScoutSync.BL.Services
     {
         public DateTime? Since { get; set; }
         public DateTime? Till { get; set; }
+        public double TargetLow { get; set; } = 3.7;
     }
 }
