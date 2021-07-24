@@ -92,6 +92,16 @@ namespace TidepoolToNightScoutSync.BL.Services
             }
 
             // map insulin sensitivities
+            foreach (var (name, carbRatios) in setting.InsulinSensitivities.Select(x => (x.Key, x.Value)))
+            {
+                profile.Store.TryAdd(name, new ProfileInfo());
+                profile.Store[name].Sens.AddRange(carbRatios.Select(x => new Sen
+                {
+                    Time = TimeSpan.FromSeconds(x.Start / 1000).ToString(@"hh\:mm"),
+                    TimeAsSeconds = (x.Start / 1000).ToString(),
+                    Value = x.Amount.ToString()
+                }));
+            }
 
             await _nightscout.SetProfile(profile);
         }
