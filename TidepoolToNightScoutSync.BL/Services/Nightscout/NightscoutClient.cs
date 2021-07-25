@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading.Tasks;
 
 using TidepoolToNightScoutSync.BL.Model.Nightscout;
@@ -25,6 +27,13 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
             _client.Formatters.JsonFormatter.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
         }
 
+        private static string SHA1(in string input)
+        {
+            using var sha1 = new SHA1Managed();
+            var hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(input));
+            return string.Concat(hash.Select(b => b.ToString("x2")));
+        }
+
         public async Task<IReadOnlyList<Profile>> GetProfiles() =>
             await _client
                 .GetAsync("api/v1/profile")
@@ -33,6 +42,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
         public async Task<Profile> SetProfile(Profile profile) =>
             await _client
                .PutAsync("api/v1/profile", profile)
+               .WithHeader("api-secret", SHA1(_options.ApiKey))
                .As<Profile>();
 
         public async Task<IReadOnlyList<Treatment>> AddTreatmentsAsync(IEnumerable<Treatment> treatments) =>

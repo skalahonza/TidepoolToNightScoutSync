@@ -14,6 +14,9 @@ using System.IO;
 using System.Collections.Generic;
 using TidepoolToNightScoutSync.BL.Model.Tidepool;
 using FluentAssertions;
+using System.Linq;
+using TidepoolToNightScoutSync.BL.Services.Nightscout;
+using System.Globalization;
 
 namespace TidepoolToNightScoutSync.Tests
 {
@@ -31,6 +34,7 @@ namespace TidepoolToNightScoutSync.Tests
             client.Setup(x => x.GetBolusAsync(It.IsAny<DateTime?>(), It.IsAny<DateTime?>())).Returns(FromFile<IReadOnlyList<Bolus>>("Data/bolus.json"));
             client.Setup(x => x.GetFoodAsync(It.IsAny<DateTime?>(), It.IsAny<DateTime?>())).Returns(FromFile<IReadOnlyList<Food>>("Data/food.json"));
             client.Setup(x => x.GetPhysicalActivityAsync(It.IsAny<DateTime?>(), It.IsAny<DateTime?>())).Returns(FromFile<IReadOnlyList<PhysicalActivity>>("Data/phys.json"));
+            client.Setup(x => x.GetPumpSettingsAsync(It.IsAny<DateTime?>(), It.IsAny<DateTime?>())).Returns(FromFile<IReadOnlyList<PumpSettings>>("Data/pumpSettings.json"));
 
             var factory = new Mock<ITidepoolClientFactory>();
             factory.Setup(x => x.CreateAsync()).Returns(Task.FromResult(client.Object));
@@ -53,6 +57,72 @@ namespace TidepoolToNightScoutSync.Tests
 
             _syncer = services.GetRequiredService<TidepoolToNightScoutSyncer>();
             _tidepool = services.GetRequiredService<ITidepoolClientFactory>().CreateAsync().Result;
+        }
+
+        private bool AreEqualApproximately(double left, double right, double v) =>
+            Math.Abs(left - right) < v;
+
+        [Fact]
+        public async Task SyncProfiles()
+        {
+            // Arrange
+            var nfi = new CultureInfo("en-US", false).NumberFormat;
+            var settings = await _tidepool.GetPumpSettingsAsync();
+            var setting = settings.OrderByDescending(x => x.DeviceTime).FirstOrDefault();
+
+            // Act
+            var profile = await _syncer.SyncProfiles();
+
+            // Assert
+            profile.Store.Keys.Should().Contain(setting.BasalSchedules.Select(x => x.Key));
+            profile.Store.Keys.Should().Contain(setting.BgTargets.Select(x => x.Key));
+            profile.Store.Keys.Should().Contain(setting.CarbRatios.Select(x => x.Key));
+            profile.Store.Keys.Should().Contain(setting.InsulinSensitivities.Select(x => x.Key));
+
+            // basal
+            foreach (var (name, schedule) in setting.BasalSchedules.Select(x => (x.Key, x.Value)))
+            {
+                var expectedBasal = schedule.Select(x => ((x.Start / 1000).ToString(nfi), x.Rate.ToString(nfi)));
+                profile.Store[name].Basal
+                    .Select(x => (x.TimeAsSeconds, x.Value))
+                    .Should().BeEquivalentTo(expectedBasal);
+            }
+
+            // bg targets 
+            foreach (var (name, targets) in setting.BgTargets.Select(x => (x.Key, x.Value)))
+            {
+                var expectedTimes = targets.Select(x => (x.Start / 1000).ToString(nfi));
+                var expectedTargets = targets.Select(x => x.Target);
+
+                profile.Store[name].TargetLow.Select(x => x.TimeAsSeconds).Should().BeEquivalentTo(profile.Store[name].TargetHigh.Select(x => x.TimeAsSeconds));
+                profile.Store[name].TargetLow.Select(x => x.Time).Should().BeEquivalentTo(profile.Store[name].TargetHigh.Select(x => x.Time));
+                profile.Store[name].TargetLow.Select(x => x.TimeAsSeconds).Should().BeEquivalentTo(expectedTimes);
+
+
+                // interval middle value whould be equal to Tidepool target
+                profile.Store[name].TargetLow.Zip(profile.Store[name].TargetHigh)
+                    .Select(x => double.Parse(x.Second.Value, CultureInfo.InvariantCulture) - double.Parse(x.First.Value, CultureInfo.InvariantCulture))
+                    .Should()
+                    .Equal(expectedTargets, (left, right) => AreEqualApproximately(left, right, 0.001));
+            }
+
+            // carb ratios
+            foreach (var (name, carbRatios) in setting.CarbRatios.Select(x => (x.Key, x.Value)))
+            {
+                var expectedRatios = carbRatios.Select(x => ((x.Start / 1000).ToString(nfi), x.Amount.ToString(nfi)));
+                profile.Store[name].Carbratio
+                    .Select(x => (x.TimeAsSeconds, x.Value))
+                    .Should().BeEquivalentTo(expectedRatios);
+            }
+
+            // insulin sensitivities
+            foreach (var (name, sensitivities) in setting.InsulinSensitivities.Select(x => (x.Key, x.Value)))
+            {
+                var expectedSensitivities = sensitivities.Select(x => ((x.Start / 1000).ToString(nfi), x.Amount.ToString(nfi)));
+                profile.Store[name].Sens
+                    .Select(x => (x.TimeAsSeconds, x.Value))
+                    .Should().BeEquivalentTo(expectedSensitivities);
+            }
         }
 
         [Fact]
