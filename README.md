@@ -20,7 +20,7 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
    * tidepool:Username = your tidepool username
    * tidepool:Password = your tidepool password
    * nightscout:BaseUrl = your tidepool password
-   * nightscout:ApiKey = your NightScout API SECRET (with at least [careportal](http://www.nightscout.info/wiki/welcome/website-features/0-9-features/authentication-roles) role)
+   * nightscout:ApiKey = your NightScout API KEY
    * sync:since = since when the data should be imported (optional, can be null)
    * sync:till = till when the data should be imported (optional, can be null)
  ### Example configuration
@@ -34,8 +34,8 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
 "sync:till": null
 }
 ```
-5. Open command prompt in the folder and run the app using `dotnet run`
-6. You should now see your data in NightScout
+1. Open command prompt in the folder and run the app using `dotnet run`
+2. You should now see your data in NightScout
 
 ## Run using only CMD
 Good for AdHoc syncing.
