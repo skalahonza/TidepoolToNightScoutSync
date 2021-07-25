@@ -26,7 +26,7 @@ namespace TidepoolToNightScoutSync.BL.Services
             _options = options.Value;
         }
 
-        public async Task SyncProfiles(DateTime? since = null, DateTime? till = null)
+        public async Task<Profile?> SyncProfiles(DateTime? since = null, DateTime? till = null)
         {
             var nfi = new CultureInfo("en-US", false).NumberFormat;
             since ??= _options.Since ?? DateTime.Today;
@@ -35,7 +35,7 @@ namespace TidepoolToNightScoutSync.BL.Services
 
             var settings = await tidepool.GetPumpSettingsAsync(since, till);
             var setting = settings.OrderByDescending(x => x.DeviceTime).FirstOrDefault();
-            if (setting == null) return;
+            if (setting == null) return null;
 
             var profile = new Profile
             {
@@ -94,10 +94,10 @@ namespace TidepoolToNightScoutSync.BL.Services
             }
 
             // map insulin sensitivities
-            foreach (var (name, carbRatios) in setting.InsulinSensitivities.Select(x => (x.Key, x.Value)))
+            foreach (var (name, sensitivities) in setting.InsulinSensitivities.Select(x => (x.Key, x.Value)))
             {
                 profile.Store.TryAdd(name, new ProfileInfo());
-                profile.Store[name].Sens.AddRange(carbRatios.Select(x => new Sen
+                profile.Store[name].Sens.AddRange(sensitivities.Select(x => new Sen
                 {
                     Time = TimeSpan.FromSeconds(x.Start / 1000).ToString(@"hh\:mm"),
                     TimeAsSeconds = (x.Start / 1000).ToString(),
@@ -109,7 +109,7 @@ namespace TidepoolToNightScoutSync.BL.Services
             var profiles = await _nightscout.GetProfiles();
             profile.Id = profiles.FirstOrDefault(x => x.Mills == profile.Mills)?.Id;
 
-            await _nightscout.SetProfile(profile);
+            return await _nightscout.SetProfile(profile);
         }
 
         public async Task<IReadOnlyList<Treatment>> SyncAsync(DateTime? since = null, DateTime? till = null)
