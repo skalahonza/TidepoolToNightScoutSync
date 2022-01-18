@@ -48,6 +48,7 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
         public async Task<IReadOnlyList<Treatment>> AddTreatmentsAsync(IEnumerable<Treatment> treatments) =>
             await _client
                 .PostAsync("api/v1/treatments", treatments)
+                .WithHeader("api-secret", SHA1(_options.ApiKey))
                 .AsArray<Treatment>();
 
         /// <summary>
