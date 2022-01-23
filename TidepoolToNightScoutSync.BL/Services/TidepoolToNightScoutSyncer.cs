@@ -138,6 +138,8 @@ namespace TidepoolToNightScoutSync.BL.Services
                 {
                     Carbs = food.GetValueOrDefault(x.Time)?.Nutrition?.Carbohydrate?.Net,
                     Insulin = x.Normal,
+                    Duration = x.Duration?.TotalMinutes,
+                    Relative = x.Extended,
                     CreatedAt = x.Time,
                     EnteredBy = "Tidepool"
                 })

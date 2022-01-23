@@ -11,6 +11,15 @@ namespace TidepoolToNightScoutSync.BL.Model.Tidepool
 
         [JsonProperty("normal")]
         public double? Normal { get; set; }
+        
+        [JsonProperty("extended")]
+        public double? Extended { get; set; }
+        
+        /// <summary>
+        /// Duration in milliseconds.
+        /// </summary>
+        [JsonProperty("duration")]
+        public long? DurationMs { get; set; }
 
         [JsonProperty("subType")]
         public string? SubType { get; set; }
@@ -20,5 +29,9 @@ namespace TidepoolToNightScoutSync.BL.Model.Tidepool
 
         [JsonProperty("uploadId")]
         public string? UploadId { get; set; }
+
+        public TimeSpan? Duration => DurationMs.HasValue
+            ? TimeSpan.FromMilliseconds(DurationMs.Value)
+            : default(TimeSpan?);
     }
 }
