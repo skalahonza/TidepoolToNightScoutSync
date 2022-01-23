@@ -1,5 +1,5 @@
 # Tidepool to NightScout sync tool
-This tool helps syncing data from **Tidepool** to **NightScout**. Currently normal bolus, carbs, physical activity, basal schedules, bg targets, carb ratios and insulin sensitivities are supported.
+This tool helps syncing data from **Tidepool** to **NightScout**. Currently normal bolus, combo bolus, carbs, physical activity, basal schedules, bg targets, carb ratios and insulin sensitivities are supported.
 ![Sync](Images/sync.PNG)
 
 ## What is Tidepool
@@ -24,7 +24,7 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
    * sync:since = since when the data should be imported (optional, can be null)
    * sync:till = till when the data should be imported (optional, can be null)
  ### Example configuration
- ```js
+ ```json
  {
 "tidepool:Username": "tidepool@username.com",
 "tidepool:Password": "password",
