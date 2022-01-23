@@ -32,6 +32,9 @@ namespace TidepoolToNightScoutSync.BL.Model.Nightscout
 
         [JsonProperty("insulin")]
         public double? Insulin { get; set; }
+        
+        [JsonProperty("relative")]
+        public double? Relative { get; set; }
 
         [JsonProperty("units")]
         public string Units { get; set; } = "mmol";
