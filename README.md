@@ -19,7 +19,7 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
 4. Change items below and fill in your user credentials
    * tidepool:Username = your tidepool username
    * tidepool:Password = your tidepool password
-   * nightscout:BaseUrl = your tidepool password
+   * nightscout:BaseUrl = your NightScout url
    * nightscout:ApiKey = your NightScout API KEY
    * sync:since = since when the data should be imported (optional, can be null)
    * sync:till = till when the data should be imported (optional, can be null)
