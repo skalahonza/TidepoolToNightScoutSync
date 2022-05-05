@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TidepoolToNightScoutSync.Desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TidepoolToNightScoutSync.Desktop.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="TidepoolToNightScoutSync.Desktop">
+    
+    <Window.Styles>
+        <Style Selector="TextBlock.h1">
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+    </Window.Styles>
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <TextBlock Text="{Binding AppName}" Classes="h1"/>
+        <Separator BorderThickness="1" BorderBrush="Green"/>
+        <Button Content="Sync now" HorizontalAlignment="Center"/>
+        <StackPanel.Styles>
+            <Style Selector="Button,TextBlock">
+                <Setter Property="Margin" Value="5"/>
+            </Style>
+        </StackPanel.Styles> 
+    </StackPanel>
+</Window>
