@@ -20,8 +20,11 @@
     
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
         <TextBlock Text="{Binding AppName}" Classes="h1"/>
-        <Separator BorderThickness="1" BorderBrush="Green"/>
-        <Button Content="Sync now" HorizontalAlignment="Center"/>
+        <Separator BorderThickness="1" BorderBrush="Green" IsVisible="{Binding !IsRunning}"/>
+        <ProgressBar IsIndeterminate="True" IsVisible="{Binding IsRunning}"/>
+        <Button Content="Sync now"
+                HorizontalAlignment="Center"
+                Command="{Binding RunSyncNow}"/>
         <StackPanel.Styles>
             <Style Selector="Button,TextBlock">
                 <Setter Property="Margin" Value="5"/>
