@@ -29,6 +29,19 @@
                     Command="{Binding RunSyncNow}" />
             <DatePicker SelectedDate="{Binding Since}" />
         </StackPanel>
+        <Expander Header="Settings" HorizontalAlignment="Stretch">
+            <StackPanel>
+                <TextBlock Text="Nightscout" />
+                <TextBox HorizontalAlignment="Stretch" Text="{Binding Credentials.Nightscout.BaseUrl}" />
+                <TextBox PasswordChar="*" HorizontalAlignment="Stretch" Text="{Binding Credentials.Nightscout.ApiKey}" />
+                
+                <TextBlock Text="tidepool" />
+                <TextBox HorizontalAlignment="Stretch" Text="{Binding Credentials.Tidepool.Username}" />
+                <TextBox PasswordChar="*" HorizontalAlignment="Stretch" Text="{Binding Credentials.Tidepool.Password}" />
+                
+                <Button Content="Save settings" Command="{Binding RunSaveSettings}"/>
+            </StackPanel>
+        </Expander>
         <StackPanel.Styles>
             <Style Selector="Button,TextBlock">
                 <Setter Property="Margin" Value="5" />
