@@ -7,7 +7,7 @@
         Width="800" Height="450"
         x:Class="TidepoolToNightScoutSync.Desktop.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="TidepoolToNightScoutSync.Desktop">
+        Title="{Binding AppName}">
 
     <Window.Styles>
         <Style Selector="TextBlock.h1">
@@ -32,12 +32,22 @@
         <Expander Header="Settings" HorizontalAlignment="Stretch">
             <StackPanel>
                 <TextBlock Text="Nightscout" />
-                <TextBox HorizontalAlignment="Stretch" Text="{Binding Credentials.Nightscout.BaseUrl}" />
-                <TextBox PasswordChar="*" HorizontalAlignment="Stretch" Text="{Binding Credentials.Nightscout.ApiKey}" />
+                <TextBox HorizontalAlignment="Stretch" 
+                         Text="{Binding Credentials.Nightscout.BaseUrl}" 
+                         Watermark="https://yourappname.herokuapp.com"/>
+                <TextBox PasswordChar="*" 
+                         HorizontalAlignment="Stretch" 
+                         Text="{Binding Credentials.Nightscout.ApiKey}" 
+                         Watermark="Nightscout API key" />
                 
-                <TextBlock Text="tidepool" />
-                <TextBox HorizontalAlignment="Stretch" Text="{Binding Credentials.Tidepool.Username}" />
-                <TextBox PasswordChar="*" HorizontalAlignment="Stretch" Text="{Binding Credentials.Tidepool.Password}" />
+                <TextBlock Text="Tidepool" />
+                <TextBox HorizontalAlignment="Stretch" 
+                         Text="{Binding Credentials.Tidepool.Username}" 
+                         Watermark="Tidepool username"/>
+                <TextBox PasswordChar="*" 
+                         HorizontalAlignment="Stretch" 
+                         Text="{Binding Credentials.Tidepool.Password}" 
+                         Watermark="Tidepool password"/>
                 
                 <Button Content="Save settings" Command="{Binding RunSaveSettings}"/>
             </StackPanel>
