@@ -1,4 +1,11 @@
 # Tidepool to NightScout sync tool
+## Questions and answers
+If you have any question or you need to help with getting started write a post here: https://github.com/skalahonza/TidepoolToNightScoutSync/discussions/categories/q-a.
+I know that writing an email might be faster, but GitHub Discussions are prefered for following reasons:
+* mabye someone already asked the same question
+* answers to questions can be found easier
+
+## Description
 This tool helps syncing data from **Tidepool** to **NightScout**. Currently normal bolus, combo bolus, carbs, physical activity, basal schedules, bg targets, carb ratios and insulin sensitivities are supported.
 ![Sync](Images/sync.PNG)
 
