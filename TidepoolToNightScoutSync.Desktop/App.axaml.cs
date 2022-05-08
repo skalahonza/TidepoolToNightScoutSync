@@ -1,5 +1,5 @@
-using System;
 using System.IO;
+using System.Threading;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using Serilog;
-using TidepoolToNightScoutSync.BL.Extensions;
 using TidepoolToNightScoutSync.BL.Services;
 using TidepoolToNightScoutSync.BL.Services.Nightscout;
 using TidepoolToNightScoutSync.BL.Services.Tidepool;
@@ -29,6 +28,10 @@ namespace TidepoolToNightScoutSync.Desktop
             var configuration = CreateConfiguration();
             var services = ConfigureServices(configuration);
             var provider = services.BuildServiceProvider();
+            var cancellationTokenSource = new CancellationTokenSource();
+
+            // run background sync
+            provider.GetRequiredService<BackgroundSync>().StartAsync(cancellationTokenSource.Token);
 
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
@@ -36,6 +39,7 @@ namespace TidepoolToNightScoutSync.Desktop
                 {
                     DataContext = provider.GetRequiredService<MainWindowViewModel>()
                 };
+                desktop.Exit += (_, _) => cancellationTokenSource.Cancel();
             }
 
             base.OnFrameworkInitializationCompleted();
@@ -58,13 +62,14 @@ namespace TidepoolToNightScoutSync.Desktop
             // nightscout
             services.AddHttpClient<NightscoutClient>();
             services.Configure<NightscoutClientOptions>(configuration.GetSection("Nightscout"));
-            
+
             // tidepool
             services.AddHttpClient<ITidepoolClientFactory, TidepoolClientFactory>();
             services.Configure<TidepoolClientOptions>(configuration.GetSection("Tidepool"));
-            
+
             // sync
             services.AddScoped<TidepoolToNightScoutSyncer>();
+            services.AddSingleton<BackgroundSync>();
 
             return services;
         }
