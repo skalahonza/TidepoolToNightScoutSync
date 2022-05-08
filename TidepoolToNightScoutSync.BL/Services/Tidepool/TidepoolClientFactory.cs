@@ -14,19 +14,21 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
     public class TidepoolClientFactory : ITidepoolClientFactory
     {
         private readonly IClient _client;
-        private readonly TidepoolClientOptions _options;
+        private readonly IOptionsMonitor<TidepoolClientOptions> _optionsMonitor;
 
-        public TidepoolClientFactory(IOptions<TidepoolClientOptions> options, HttpClient client)
+        public TidepoolClientFactory(IOptionsMonitor<TidepoolClientOptions> options, HttpClient client)
         {
-            _options = options.Value;
-            _client = new FluentClient(new Uri(_options.BaseUrl), client);
+            _optionsMonitor = options;
+            _client = new FluentClient(new Uri(Options.BaseUrl), client);
         }
+        
+        private TidepoolClientOptions Options => _optionsMonitor.CurrentValue;
 
         private async Task<ITidepoolClient> AuthorizeAsync()
         {
             var response = await _client
                 .PostAsync("auth/login")
-                .WithBasicAuthentication(_options.Username, _options.Password)
+                .WithBasicAuthentication(Options.Username, Options.Password)
                 .AsResponse();
 
             var token = response.Message.Headers.GetValues("x-tidepool-session-token").Single();
@@ -34,10 +36,16 @@ namespace TidepoolToNightScoutSync.BL.Services.Tidepool
 
             var authResponse = await response.As<AuthResponse>();
 
-            if(string.IsNullOrEmpty(_options.UserId))
-                _options.UserId = authResponse.Userid;
+            if(string.IsNullOrEmpty(Options.UserId))
+                Options.UserId = authResponse.Userid;
 
-            return new TidepoolClient(_client, _options);
+            return new TidepoolClient(_client, new TidepoolClientOptions
+            {
+                BaseUrl = Options.BaseUrl,
+                UserId = string.IsNullOrEmpty(Options.UserId) ? authResponse.Userid : Options.UserId,
+                Username = Options.Username,
+                Password = Options.Password
+            });
         }
 
         public Task<ITidepoolClient> CreateAsync() =>

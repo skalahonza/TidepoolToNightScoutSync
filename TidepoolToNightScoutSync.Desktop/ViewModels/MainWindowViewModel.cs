@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Newtonsoft.Json;
@@ -14,25 +15,21 @@ namespace TidepoolToNightScoutSync.Desktop.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        private readonly TidepoolToNightScoutSyncer _syncer;
+        private readonly IServiceProvider _serviceProvider;
         private readonly ILogger<MainWindowViewModel> _logger;
 
         private bool _isRunning;
 
         public MainWindowViewModel()
         {
-            _syncer = null!;
+            _serviceProvider = null!;
             _logger = NullLogger<MainWindowViewModel>.Instance;
         }
 
-        public MainWindowViewModel(TidepoolToNightScoutSyncer syncer, ILogger<MainWindowViewModel> logger)
+        public MainWindowViewModel(IServiceProvider serviceProvider, ILogger<MainWindowViewModel> logger)
         {
-            _syncer = syncer;
+            _serviceProvider = serviceProvider;
             _logger = logger;
-            if (!File.Exists("credentials.json"))
-            {
-                File.WriteAllText("credentials.json", JsonConvert.SerializeObject(new CredentialsViewModel()));
-            }
 
             var credentialsJson = File.ReadAllText("credentials.json");
             Credentials = JsonConvert.DeserializeObject<CredentialsViewModel>(credentialsJson);
@@ -55,8 +52,10 @@ namespace TidepoolToNightScoutSync.Desktop.ViewModels
             IsRunning = true;
             try
             {
-                await _syncer.SyncProfiles(Since.UtcDateTime);
-                await _syncer.SyncAsync(Since.UtcDateTime);
+                using var scope = _serviceProvider.CreateScope();
+                var syncer = scope.ServiceProvider.GetRequiredService<TidepoolToNightScoutSyncer>();
+                await syncer.SyncProfiles(Since.UtcDateTime);
+                await syncer.SyncAsync(Since.UtcDateTime);
             }
             catch (Exception e)
             {

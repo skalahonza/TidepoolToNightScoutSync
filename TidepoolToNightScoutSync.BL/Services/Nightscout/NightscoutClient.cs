@@ -17,15 +17,17 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
     public class NightscoutClient
     {
         private readonly IClient _client;
-        private readonly NightscoutClientOptions _options;
+        private readonly IOptionsMonitor<NightscoutClientOptions> _optionsMonitor;
 
-        public NightscoutClient(IOptions<NightscoutClientOptions> options, HttpClient client)
+        public NightscoutClient(IOptionsMonitor<NightscoutClientOptions> options, HttpClient client)
         {
-            _options = options.Value;
-            _client = new FluentClient(new Uri(_options.BaseUrl), client);
-            _client.AddDefault(x => x.WithArgument("token", _options.ApiKey));
+            _optionsMonitor = options;
+            _client = new FluentClient(new Uri(Options.BaseUrl), client);
+            _client.AddDefault(x => x.WithArgument("token", Options.ApiKey));
             _client.Formatters.JsonFormatter.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
         }
+
+        private NightscoutClientOptions Options => _optionsMonitor.CurrentValue;
 
         private static string SHA1(in string input)
         {
@@ -42,13 +44,13 @@ namespace TidepoolToNightScoutSync.BL.Services.Nightscout
         public async Task<Profile> SetProfile(Profile profile) =>
             await _client
                .PutAsync("api/v1/profile", profile)
-               .WithHeader("api-secret", SHA1(_options.ApiKey))
+               .WithHeader("api-secret", SHA1(Options.ApiKey))
                .As<Profile>();
 
         public async Task<IReadOnlyList<Treatment>> AddTreatmentsAsync(IEnumerable<Treatment> treatments) =>
             await _client
                 .PostAsync("api/v1/treatments", treatments)
-                .WithHeader("api-secret", SHA1(_options.ApiKey))
+                .WithHeader("api-secret", SHA1(Options.ApiKey))
                 .AsArray<Treatment>();
 
         /// <summary>

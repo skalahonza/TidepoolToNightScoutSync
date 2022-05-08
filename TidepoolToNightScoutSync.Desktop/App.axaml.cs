@@ -1,12 +1,18 @@
 using System;
+using System.IO;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Serilog;
 using TidepoolToNightScoutSync.BL.Extensions;
+using TidepoolToNightScoutSync.BL.Services;
+using TidepoolToNightScoutSync.BL.Services.Nightscout;
+using TidepoolToNightScoutSync.BL.Services.Tidepool;
 using TidepoolToNightScoutSync.Desktop.ViewModels;
+using TidepoolToNightScoutSync.Desktop.ViewModels.Credentials;
 using TidepoolToNightScoutSync.Desktop.Views;
 
 namespace TidepoolToNightScoutSync.Desktop
@@ -46,21 +52,36 @@ namespace TidepoolToNightScoutSync.Desktop
             var services = new ServiceCollection();
 
             services.AddTransient<MainWindowViewModel>();
-            services.AddSingleton(configuration)
-                .AddTidepoolClient((settings, c) => c.GetSection("tidepool").Bind(settings))
-                .AddNightscoutClient((settings, c) => c.GetSection("nightscout").Bind(settings))
-                .AddTidepoolToNightScoutSyncer((settings, c) => c.GetSection("sync").Bind(settings))
-                .AddLogging(x => x.AddSerilog());
+            services.AddSingleton(configuration);
+            services.AddLogging(x => x.AddSerilog());
+
+            // nightscout
+            services.AddHttpClient<NightscoutClient>();
+            services.Configure<NightscoutClientOptions>(configuration.GetSection("Nightscout"));
+            
+            // tidepool
+            services.AddHttpClient<ITidepoolClientFactory, TidepoolClientFactory>();
+            services.Configure<TidepoolClientOptions>(configuration.GetSection("Tidepool"));
+            
+            // sync
+            services.AddScoped<TidepoolToNightScoutSyncer>();
 
             return services;
         }
 
-        private static IConfiguration CreateConfiguration() =>
-            new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", true, true)
-                .AddJsonFile("credentials.json", true, true)
+        private static IConfiguration CreateConfiguration()
+        {
+            if (!File.Exists("credentials.json"))
+            {
+                File.WriteAllText("credentials.json", JsonConvert.SerializeObject(new CredentialsViewModel()));
+            }
+
+            return new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", false, true)
+                .AddJsonFile("credentials.json", false, true)
                 .AddEnvironmentVariables()
                 .AddUserSecrets<Program>()
                 .Build();
+        }
     }
 }
