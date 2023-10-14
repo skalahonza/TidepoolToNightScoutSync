@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace TidepoolToNightScoutSync.BL.Model.Tidepool
+namespace TidepoolToNightScoutSync.Core.Model.Tidepool
 {
     public class Food
     {

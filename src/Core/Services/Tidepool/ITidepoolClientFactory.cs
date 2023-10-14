@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace TidepoolToNightScoutSync.BL.Services.Tidepool
+namespace TidepoolToNightScoutSync.Core.Services.Tidepool
 {
     public interface ITidepoolClientFactory
     {

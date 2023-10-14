@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Pathoschild.Http.Client;
-using TidepoolToNightScoutSync.BL.Model.Nightscout;
+using TidepoolToNightScoutSync.Core.Model.Nightscout;
 
-namespace TidepoolToNightScoutSync.BL.Services.Nightscout
+namespace TidepoolToNightScoutSync.Core.Services.Nightscout
 {
     public class NightscoutClient
     {

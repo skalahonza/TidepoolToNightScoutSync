@@ -4,11 +4,11 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
-using TidepoolToNightScoutSync.BL.Model.Nightscout;
-using TidepoolToNightScoutSync.BL.Services.Nightscout;
-using TidepoolToNightScoutSync.BL.Services.Tidepool;
+using TidepoolToNightScoutSync.Core.Model.Nightscout;
+using TidepoolToNightScoutSync.Core.Services.Nightscout;
+using TidepoolToNightScoutSync.Core.Services.Tidepool;
 
-namespace TidepoolToNightScoutSync.BL.Services
+namespace TidepoolToNightScoutSync.Core.Services
 {
     public class TidepoolToNightScoutSyncer
     {

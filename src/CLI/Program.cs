@@ -2,10 +2,10 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
-using TidepoolToNightScoutSync.BL.Extensions;
-using TidepoolToNightScoutSync.BL.Services;
+using TidepoolToNightScoutSync.Core.Extensions;
+using TidepoolToNightScoutSync.Core.Services;
 
-namespace TidepoolToNightScoutSync.APP
+namespace TidepoolToNightScoutSync.CLI
 {
     class Program
     {
@@ -27,7 +27,8 @@ namespace TidepoolToNightScoutSync.APP
             // dependency injection
             var services = new ServiceCollection()
                 .AddSingleton<IConfiguration>(configuration)
-                .AddTidepoolClient((settings, configuration) => configuration.GetSection("tidepool").Bind(settings))
+                .AddTidepoolClient((settings, configuration) =>
+                    ConfigurationBinder.Bind(configuration.GetSection("tidepool"), settings))
                 .AddNightscoutClient((settings, configuration) => configuration.GetSection("nightscout").Bind(settings))
                 .AddTidepoolToNightScoutSyncer((settings, configuration) =>
                     configuration.GetSection("sync").Bind(settings))

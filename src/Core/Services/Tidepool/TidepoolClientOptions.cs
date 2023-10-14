@@ -1,4 +1,4 @@
-﻿namespace TidepoolToNightScoutSync.BL.Services.Tidepool
+﻿namespace TidepoolToNightScoutSync.Core.Services.Tidepool
 {
     public class TidepoolClientOptions
     {

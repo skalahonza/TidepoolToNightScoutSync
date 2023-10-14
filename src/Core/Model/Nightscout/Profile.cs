@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace TidepoolToNightScoutSync.BL.Model.Nightscout
+namespace TidepoolToNightScoutSync.Core.Model.Nightscout
 {
     public class Profile
     {

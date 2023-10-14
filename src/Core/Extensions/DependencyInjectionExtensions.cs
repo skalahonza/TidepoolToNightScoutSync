@@ -1,11 +1,11 @@
 ﻿using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TidepoolToNightScoutSync.BL.Services;
-using TidepoolToNightScoutSync.BL.Services.Nightscout;
-using TidepoolToNightScoutSync.BL.Services.Tidepool;
+using TidepoolToNightScoutSync.Core.Services;
+using TidepoolToNightScoutSync.Core.Services.Nightscout;
+using TidepoolToNightScoutSync.Core.Services.Tidepool;
 
-namespace TidepoolToNightScoutSync.BL.Extensions
+namespace TidepoolToNightScoutSync.Core.Extensions
 {
     public static class DependencyInjectionExtensions
     {

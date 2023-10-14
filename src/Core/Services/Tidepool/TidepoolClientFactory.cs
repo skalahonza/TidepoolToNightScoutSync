@@ -4,9 +4,9 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using Pathoschild.Http.Client;
-using TidepoolToNightScoutSync.BL.Model.Tidepool;
+using TidepoolToNightScoutSync.Core.Model.Tidepool;
 
-namespace TidepoolToNightScoutSync.BL.Services.Tidepool
+namespace TidepoolToNightScoutSync.Core.Services.Tidepool
 {
     public class TidepoolClientFactory : ITidepoolClientFactory
     {

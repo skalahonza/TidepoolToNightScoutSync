@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Pathoschild.Http.Client;
-using TidepoolToNightScoutSync.BL.Extensions;
-using TidepoolToNightScoutSync.BL.Model.Tidepool;
+using TidepoolToNightScoutSync.Core.Extensions;
+using TidepoolToNightScoutSync.Core.Model.Tidepool;
 
-namespace TidepoolToNightScoutSync.BL.Services.Tidepool
+namespace TidepoolToNightScoutSync.Core.Services.Tidepool
 {
     public class TidepoolClient : ITidepoolClient
     {

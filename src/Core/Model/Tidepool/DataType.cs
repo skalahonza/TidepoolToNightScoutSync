@@ -1,4 +1,4 @@
-﻿namespace TidepoolToNightScoutSync.BL.Model.Tidepool
+﻿namespace TidepoolToNightScoutSync.Core.Model.Tidepool
 {
     public enum DataType
     {

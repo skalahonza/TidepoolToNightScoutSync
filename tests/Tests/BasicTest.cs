@@ -9,10 +9,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using Newtonsoft.Json;
-using TidepoolToNightScoutSync.BL.Extensions;
-using TidepoolToNightScoutSync.BL.Model.Tidepool;
-using TidepoolToNightScoutSync.BL.Services;
-using TidepoolToNightScoutSync.BL.Services.Tidepool;
+using TidepoolToNightScoutSync.Core.Extensions;
+using TidepoolToNightScoutSync.Core.Model.Tidepool;
+using TidepoolToNightScoutSync.Core.Services;
+using TidepoolToNightScoutSync.Core.Services.Tidepool;
 using Xunit;
 
 namespace TidepoolToNightScoutSync.Tests

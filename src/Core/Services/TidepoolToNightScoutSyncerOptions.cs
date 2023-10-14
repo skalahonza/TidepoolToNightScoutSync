@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TidepoolToNightScoutSync.BL.Services
+namespace TidepoolToNightScoutSync.Core.Services
 {
     public class TidepoolToNightScoutSyncerOptions
     {

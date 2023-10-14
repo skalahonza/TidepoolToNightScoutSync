@@ -1,4 +1,4 @@
-﻿namespace TidepoolToNightScoutSync.BL.Extensions
+﻿namespace TidepoolToNightScoutSync.Core.Extensions
 {
     public static class StringExtension
     {

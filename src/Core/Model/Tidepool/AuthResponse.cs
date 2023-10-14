@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace TidepoolToNightScoutSync.BL.Model.Tidepool
+namespace TidepoolToNightScoutSync.Core.Model.Tidepool
 {
     public class AuthResponse
     {

@@ -3,7 +3,7 @@ using System.Web;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace TidepoolToNightScoutSync.APP
+namespace TidepoolToNightScoutSync.CLI
 {
     public class Sanitizer : ILogEventEnricher
     {
