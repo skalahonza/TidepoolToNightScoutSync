@@ -5,6 +5,7 @@
     <IsPackable>false</IsPackable>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <UserSecretsId>96b39b78-2766-4663-8618-9c0b77a8eafc</UserSecretsId>
+    <RootNamespace>TidepoolToNightScoutSync.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TidepoolToNightScoutSync.BL\TidepoolToNightScoutSync.BL.csproj"/>
+    <ProjectReference Include="..\..\src\Core\Core.csproj"/>
   </ItemGroup>
 
   <ItemGroup>

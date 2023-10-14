@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A6978862-3D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B6393862-7D87-4D86-B5C3-360B2115EFD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TidepoolToNightScoutSync.Tests", "tests\TidepoolToNightScoutSync.Tests\TidepoolToNightScoutSync.Tests.csproj", "{5C36E4D5-61B8-4CC8-A596-C85F6538E0B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "tests\Tests\Tests.csproj", "{5C36E4D5-61B8-4CC8-A596-C85F6538E0B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TidepoolToNightScoutSync.BL", "src\TidepoolToNightScoutSync.BL\TidepoolToNightScoutSync.BL.csproj", "{2E027FFE-1349-48F9-8C83-74447C3CF5D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "src\Core\Core.csproj", "{2E027FFE-1349-48F9-8C83-74447C3CF5D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TidepoolToNightScoutSync.APP", "src\TidepoolToNightScoutSync.APP\TidepoolToNightScoutSync.APP.csproj", "{1DD6E2FB-18CE-4B21-950C-CBF326E6B927}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLI", "src\CLI\CLI.csproj", "{1DD6E2FB-18CE-4B21-950C-CBF326E6B927}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,10 +4,12 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>dbc15229-d6a9-4d74-851d-c756d00be8d9</UserSecretsId>
+    <AssemblyName>TidepoolToNightScoutSync.CLI</AssemblyName>
+    <RootNamespace>TidepoolToNightScoutSync.CLI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TidepoolToNightScoutSync.BL\TidepoolToNightScoutSync.BL.csproj"/>
+    <ProjectReference Include="..\Core\Core.csproj"/>
     <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.1.13"/>
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.13"/>
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.13"/>

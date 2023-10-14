@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <AssemblyName>TidepoolToNightScoutSync.Core</AssemblyName>
+    <RootNamespace>TidepoolToNightScoutSync.Core</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
