@@ -1,17 +1,6 @@
 version: "3.4"
 
 services:
-  test:
-    build:
-      context: .
-      dockerfile: TidepoolToNightScoutSync.Tests/Dockerfile  
-    environment:
-      NIGHTSCOUT__BASEURL: 'http://nightscout:1337'
-      NIGHTSCOUT__APIKEY: '${API_SECRET:-123456789abc}'
-      WAIT_HOSTS: "nightscout:1337"
-    depends_on:
-      - nightscout
-
   nightscout:
     image: "nightscout/cgm-remote-monitor:14.2.5"    
     environment:
