@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+        <UserSecretsId>98dacf2e-f0b2-4606-82ae-2b92356fd6fc</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Core\Core.csproj"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.1.13"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.13"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.13"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.13"/>
+        <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1"/>
+        <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1"/>
+        <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="appsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
