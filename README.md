@@ -1,12 +1,17 @@
 # Tidepool to NightScout sync tool
 ## Questions and answers
-If you have any question or you need to help with getting started write a post here: https://github.com/skalahonza/TidepoolToNightScoutSync/discussions/categories/q-a.
-I know that writing an email might be faster, but GitHub Discussions are prefered for following reasons:
-* mabye someone already asked the same question
+
+If you have any question, or you need to help with getting started write a post
+here: https://github.com/skalahonza/TidepoolToNightScoutSync/discussions/categories/q-a.
+I know that writing an email might be faster, but GitHub Discussions are preferred for following reasons:
+
+* maybe someone already asked the same question
 * answers to questions can be found easier
 
 ## Description
-This tool helps syncing data from **Tidepool** to **NightScout**. Currently normal bolus, combo bolus, carbs, physical activity, basal schedules, bg targets, carb ratios and insulin sensitivities are supported.
+
+This tool helps to sync data from **Tidepool** to **NightScout**. Currently normal bolus, combo bolus, carbs, physical
+activity, basal schedules, bg targets, carb ratios and insulin sensitivities are supported.
 ![Sync](Images/sync.PNG)
 
 ## What is Tidepool
@@ -20,7 +25,8 @@ Nightscout was developed by parents of children with Type 1 Diabetes and has con
 [More](http://www.nightscout.info/)
 
 ## Build and run on your device
-1. Install .NET Core SDK for your platform ([Linux](https://docs.microsoft.com/en-us/dotnet/core/install/linux), [Windows](https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore31), [macOS](https://docs.microsoft.com/en-us/dotnet/core/install/macos))
+
+1. Install [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 2. Navigate to `TidepoolToNightScoutSync.APP` folder
 3. Open file `appsettings.json`
 4. Change items below and fill in your user credentials
@@ -56,7 +62,7 @@ Good for AdHoc syncing.
 1. Navigate to `TidepoolToNightScoutSync.APP` folder
 2. Run command `dotnet run -- tidepool:Username="tidepool@username.com" tidepool:Password="password" nightscout:BaseUrl="https://skalich.herokuapp.com" nightscout:ApiKey="123456789101112"`
    * This will sync all data from Today
-   * Notice that **sync:since** is missing
+   * Notice that **sync:since** parameter is missing
 
 ## Sync values from any date
 If you have filled your user credentials in `appsettings.json` you don't have to mention them when running the app using CMD.
