@@ -10,8 +10,18 @@ I know that writing an email might be faster, but GitHub Discussions are preferr
 
 ## Description
 
-This tool helps to sync data from **Tidepool** to **NightScout**. Currently normal bolus, combo bolus, carbs, physical
-activity, basal schedules, bg targets, carb ratios and insulin sensitivities are supported.
+This tool helps to sync data from **Tidepool** to **NightScout**.
+
+### Synced data
+
+- **Bolus** - Normal and Combo bolus
+- **Carbs** - Carbs intake
+- **Physical activity** - Physical activity
+- **Basal schedules** - Basal schedules
+- **BG targets** - BG targets
+- **BG values** - BG values
+- **Carb ratios** - Carb ratios
+- **Insulin sensitivities** - Insulin sensitivities
 ![Sync](Images/sync.PNG)
 
 ## What is Tidepool
