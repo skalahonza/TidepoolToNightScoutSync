@@ -11,13 +11,13 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Core\Core.csproj"/>
-        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.1.13"/>
-        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.13"/>
-        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.13"/>
-        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="3.1.13"/>
-        <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1"/>
-        <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0"/>
-        <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0"/>
+        <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0"/>
+        <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1"/>
         <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0"/>
     </ItemGroup>
 
