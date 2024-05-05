@@ -51,5 +51,14 @@ namespace TidepoolToNightScoutSync.Core.Services.Tidepool
                 .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
                 .WithArgument("type", nameof(DataType.PumpSettings).ToCamelCase())
                 .AsArray<PumpSettings>();
+
+        public async Task<IReadOnlyList<BgValue>> GetBgValues(DateTime? start = null,
+            DateTime? end = null) =>
+            await _client
+                .GetAsync($"data/{_options.UserId}")
+                .WithArgument("startDate", start?.ToUniversalTime().ToString("o"))
+                .WithArgument("endDate", end?.ToUniversalTime().ToString("o"))
+                .WithArgument("type", nameof(DataType.Cbg).ToLower())
+                .AsArray<BgValue>();
     }
 }

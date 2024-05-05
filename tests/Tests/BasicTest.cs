@@ -36,6 +36,8 @@ namespace TidepoolToNightScoutSync.Tests
                 .Returns(FromFile<IReadOnlyList<PhysicalActivity>>("Data/phys.json"));
             client.Setup(x => x.GetPumpSettingsAsync(It.IsAny<DateTime?>(), It.IsAny<DateTime?>()))
                 .Returns(FromFile<IReadOnlyList<PumpSettings>>("Data/pumpSettings.json"));
+            client.Setup(x => x.GetBgValues(It.IsAny<DateTime?>(), It.IsAny<DateTime?>()))
+                .Returns(FromFile<IReadOnlyList<BgValue>>("Data/bgValues.json"));
 
             var factory = new Mock<ITidepoolClientFactory>();
             factory.Setup(x => x.CreateAsync()).Returns(Task.FromResult(client.Object));
@@ -139,6 +141,7 @@ namespace TidepoolToNightScoutSync.Tests
             var boluses = await _tidepool.GetBolusAsync();
             var food = await _tidepool.GetFoodAsync();
             var activities = await _tidepool.GetPhysicalActivityAsync();
+            var bgValues = await _tidepool.GetBgValues();
 
             // Act
             var treatments = await _syncer.SyncAsync();
@@ -168,6 +171,15 @@ namespace TidepoolToNightScoutSync.Tests
                     t => t.Notes == activity.Name && t.Duration == activity.Duration.Value / 60 &&
                          t.CreatedAt == activity.Time,
                     because: "Every activity should be synced exactly once.");
+            }
+
+            // BG Values
+            foreach (var bgValue in bgValues)
+            {
+                treatments.Should().ContainSingle(
+                    t => t.Glucose == bgValue.Value.ToString(CultureInfo.InvariantCulture) &&
+                         t.CreatedAt == bgValue.Time,
+                    because: "Every BG value should be synced exactly once.");
             }
         }
     }

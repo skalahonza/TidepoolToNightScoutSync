@@ -129,39 +129,94 @@ namespace TidepoolToNightScoutSync.Core.Services
 
             var activity = await tidepool.GetPhysicalActivityAsync(since, till);
 
-            var treatments = boluses
-                .Values
+            var bgValues = await tidepool.GetBgValues(since, till);
 
-                // standalone boluses and boluses with food
-                .Select(x => new Treatment
+            var treatments = new Dictionary<DateTime, Treatment>();
+
+            // standalone boluses and boluses with food
+            foreach (var bolus in boluses.Values)
+            {
+                if (!bolus.Time.HasValue)
                 {
-                    Carbs = food.GetValueOrDefault(x.Time)?.Nutrition?.Carbohydrate?.Net,
-                    Insulin = x.Normal,
-                    Duration = x.Duration?.TotalMinutes,
-                    Relative = x.Extended,
-                    CreatedAt = x.Time,
-                    EnteredBy = "Tidepool"
-                })
+                    continue;
+                }
 
-                // food without boluses
-                .Concat(food.Values.Where(x => !boluses.ContainsKey(x.Time)).Select(x => new Treatment
+                if (!treatments.TryGetValue(bolus.Time.Value, out var treatment))
                 {
-                    Carbs = x.Nutrition?.Carbohydrate?.Net,
-                    CreatedAt = x.Time,
-                    EnteredBy = "Tidepool"
-                }))
+                    treatment = treatments[bolus.Time.Value] = new Treatment();
+                }
 
-                // physical activity
-                .Concat(activity.Select(x => new Treatment
+                treatment.Carbs = food.GetValueOrDefault(bolus.Time)?.Nutrition?.Carbohydrate?.Net;
+                treatment.Insulin = bolus.Normal;
+                treatment.Duration = bolus.Duration?.TotalMinutes;
+                treatment.Relative = bolus.Extended;
+                treatment.CreatedAt = bolus.Time;
+                treatment.EnteredBy = "Tidepool";
+            }
+
+            // food without boluses
+            foreach (var item in food.Values)
+            {
+                if (!item.Time.HasValue)
                 {
-                    Notes = x.Name,
-                    Duration = x.Duration?.Value / 60,
-                    EventType = "Exercise",
-                    CreatedAt = x.Time,
-                    EnteredBy = "Tidepool"
-                }));
+                    continue;
+                }
 
-            return await _nightscout.AddTreatmentsAsync(treatments);
+                if (!treatments.TryGetValue(item.Time.Value, out var treatment))
+                {
+                    treatment = treatments[item.Time.Value] = new Treatment();
+                }
+
+                treatment.Carbs = item.Nutrition?.Carbohydrate?.Net;
+                treatment.CreatedAt = item.Time;
+                treatment.EnteredBy = "Tidepool";
+            }
+
+            // physical activity
+            foreach (var act in activity)
+            {
+                if (!act.Time.HasValue)
+                {
+                    continue;
+                }
+
+                if (!treatments.TryGetValue(act.Time.Value, out var treatment))
+                {
+                    treatment = treatments[act.Time.Value] = new Treatment();
+                }
+
+                treatment.Notes = act.Name;
+                treatment.Duration = act.Duration?.Value / 60;
+                treatment.EventType = "Exercise";
+                treatment.CreatedAt = act.Time;
+                treatment.EnteredBy = "Tidepool";
+            }
+
+            // bg values
+            foreach (var bgValue in bgValues)
+            {
+                if (!bgValue.Time.HasValue)
+                {
+                    continue;
+                }
+
+                if (!treatments.TryGetValue(bgValue.Time.Value, out var treatment))
+                {
+                    treatment = treatments[bgValue.Time.Value] = new Treatment();
+                }
+
+                treatment.Glucose = bgValue.Value.ToString(CultureInfo.InvariantCulture);
+                treatment.Units = bgValue.Units switch
+                {
+                    "mmol/L" => "mmol",
+                    "mg/dL" => "mg/dl",
+                    _ => ""
+                };
+                treatment.CreatedAt = bgValue.Time;
+                treatment.EnteredBy = "Tidepool";
+            }
+
+            return await _nightscout.AddTreatmentsAsync(treatments.Values);
         }
     }
 }

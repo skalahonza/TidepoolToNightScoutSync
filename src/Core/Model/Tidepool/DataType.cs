@@ -5,6 +5,7 @@
         Bolus,
         Food,
         PhysicalActivity,
-        PumpSettings
+        PumpSettings,
+        Cbg,
     }
 }
