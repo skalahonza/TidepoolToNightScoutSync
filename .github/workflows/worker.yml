@@ -1,15 +1,29 @@
-name: Synchronization worker
+name: Tidepool to Nightscout Sync
 
 on:
+  schedule:
+    - cron: '*/1 * * * *'
   workflow_dispatch:
 
 jobs:
-  build:
+  sync:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
-    - name: Say Hello
-      run: echo "Hello, World!"
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0'
+
+    - name: Build Project
+      run: dotnet build src/CLI/CLI.csproj --configuration Release
+
+    - name: Run Sync Tool
+      env:
+        tidepool__Username: ${{ secrets.TIDEPOOL_USER }}
+        tidepool__Password: ${{ secrets.TIDEPOOL_PASSWORD }}
+        nightscout__BaseUrl: ${{ secrets.NIGHTSCOUT_URL }}
+        nightscout__ApiKey: ${{ secrets.NIGHTSCOUT_API_SECRET }}
+      run: dotnet run --project src/CLI/CLI.csproj --configuration Release --no-build
